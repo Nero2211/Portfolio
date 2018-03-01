@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NERO Corp Development</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <div class="navbarMain">
+            <div class="navbarItem">HOME</div>
+            <div class="navbarItem">ABOUT ME</div>
+            <div class="navbarItem">HOBBIES</div>
+            <div class="navbarItem">WORK</div>
+            <div class="navbarItem">PLAN</div>
+        </div>
+        
+        <h2>WORK</h2>
+        <p>In my off time I always love to get my hands dirty in coding and code new solutions/applications or whatever I can think off. Espically when a new idea is obtained or something unique which I will find satisfactory, I will jump into the implementation stage before anything. Implementation is my favourite stage because that's the stage where I can see my idea come to life. However, I strongly do believe a suitable methodology is necessary for example: Waterfall or Agile methodology. A suitable appraoch to the project can save resources, time as well as keep everything on track and that's going to be my new challenge which would be to keep everything in a plan, in place and DOCUMENTED.</p>
+        
+        <div style="padding: 50px;">
+            <div class="newContainer">
+                <div class="newColumn">
+                    <div>
+                        <img id="myImg" src="Images/android.png" alt="Test" style="width: 400px; height: 400px"> 
+                        <h2 class="subTitle">Java</h2>
+                        <p class="subText">Most of my work is Java related at this stage as this was the programming language which attracted my focus at the first instance. This is mainly to do with android application as I am a big fan of android and I know the potential of smart phone applications and it's market. Not only for simple programming but this language also has the potential of being converted into gaming which may attract me interest in near future.
+                        </p>
+                    </div>
+                </div>
+                <div class="newColumn">
+                    <div>
+                        <img src="Images/android.png" style="width: 400px; height: 400px">
+                        <h2 class="subTitle">C#</h2>
+                        <p class="subText">The aspect I love about C# is the similarity it has with Java programming. The similarities are syntaxes and features that are used within the tools make programming easier than expected. C# was the first language in which I made my first ever working and fully functional self service desktop application. Since then I have not touched C# until recently and when I reviewed the syntaxes and click methods, it reminded me a lot of Java and after few searches on Stack Overflow, I was able to achieve desired results instantly (ofcourse I was only testing dummy applications).
+                        </p>
+                    </div>                
+                </div>
+                <div class="newColumn">
+                    <div>
+                        <img src="Images/android.png" style="width: 400px; height: 400px">
+                        <h2 class="subTitle">HTML & CSS</h2>
+                        <p class="subText">Presence in the Web Browser is just as important as on smart phones/devices. Therefore, web development is something I am also looking to participate in because the first aspect of programming which I wanted to learn was "How to make websites". Today I know how to make websites but I do not know how to make effective, appealing, interesting and unique websites. This enspires me to be more involved with gaining more knowledge in web programming as well as learning jQuery and PHP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newContainer" style="margin-top: 50px;">
+                <div class="newColumn2">
+                    <div>
+                        <img src="Images/android.png" style="width: 400px; height: 400px"> 
+                        <h2 class="subTitle">Unreal Engine</h2>
+                        <p class="subText">
+                            Gaming is a very interesting field because it's always about developing new games, new story line, characters, DLC contents. Even though it's about maintaining a game but it also involves bringing in new contents to keep the players engaged and attract more players.<br>
+                            The fist game which I made was for desktop using Unreal Engine and it was a similar game to Temple Run (collecting coins, dodging obstacles and creating time record). This game was created by following tutorial which was provided by Unreal Engine developers. Following the tutorials was interesting because I was able to learn new aspects of creation, blue print and how the coding is involved in gaming. 
+                        </p>
+                    </div>
+                </div>
+                <div class="newColumn2">
+                    <div>
+                        <img src="Images/android.png" style="width: 400px; height: 400px">
+                        <h2 class="subTitle">Photoshop</h2>
+                        <p class="subText">Photoshop is a major part in developing field; espically when it comes down to front-end development or UX/UI creation. Having knowledge with the best tools in the market is beneficial because this excludes the reason for not being given reliable tools to design. I can confidentally say that I can use Photoshop is achieve my desired results and the effects which I'd expect in the design. However, I am convinced that I still have a lot to learn when I look at speed art on Youtube.</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hidden View -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+        
+        <script>
+            var modal = document.getElementById('myModal');
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById('img01');
+            var captionText = document.getElementById('caption');
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function(){
+                modal.style.display = "none";
+            }
+            
+        </script>
+        
+        <!---------------
+
+        MOVE HERE!
+        -->
+    </body>  
+</html>
