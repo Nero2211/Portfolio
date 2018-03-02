@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
         <title>NERO Corp Development</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="navbar.css">
     </head>
     <body>
         
@@ -25,13 +27,20 @@
         </div>
         
         <div class="parralex" id="test"style="background-image: url(Images/space2.jpg);, text-align: center">
-            <div id="navbar">
-                <a class="active" href="aboutme.html">ABOUT ME</a>
-                <a href="hobbies.html">HOBBIES</a>
-                <a href="myWork.html">WORK</a>
-                <a href="plan.html">PROGRAMMING PLAN</a>
-                <a>CONTACT ME</a>
-            </div>
+            <nav id="navbar" class="navigation">
+                <span id="closebtn" onclick="navToggle()">
+                  <span class="line1"></span>
+                  <span class="line2"></span>
+                  <span class="line3"></span>
+                </span>
+                <ul id="menu" class="menulist">
+                  <li><a class="menuitems" href="aboutme.html">ABOUT ME</a></li>
+                  <li><a class="menuitems" href="hobbies.html">HOBBIES</a></li>
+                  <li><a class="menuitems" href="myWork.html">WORK</a></li>
+                  <li><a class="menuitems" href="plan.html">PROGRAMMING PLAN</a></li>
+                  <li><a class="menuitems" >CONTACT ME</a></li>
+                </ul>
+            </nav>
             
             <div class="content" id="subheading"><a id="aboutme">ABOUT ME</a></div>
             
@@ -142,7 +151,7 @@
               }
             }
         </script>
-                
+         <script src="navbar.js"></script>
     </body>  
     
 </html>

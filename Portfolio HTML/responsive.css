@@ -11,3 +11,22 @@
         width: 100%
     }
 }
+
+@media only screen and (min-width: 951px){
+    #navbar > span {
+        display: none;
+    }
+    
+    #navbar > #menu {
+        display: flex;
+        justify-content: space-evenly; //for now
+        align-content: center;
+        margin: 0 40px;
+        width: 100%;
+    }
+    
+    #navbar > #menu > li > .menuitems {
+        height: 100%;
+        opacity: 1;
+    }
+}
