@@ -1,0 +1,6 @@
+@media only screen and (max-width: 950px){
+    .socialMediaHolder{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
