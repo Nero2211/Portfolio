@@ -3,4 +3,11 @@
         flex-direction: column;
         padding: 20px 0;
     }
+    
+    .socialMediaHolder > .socialMedia{
+        padding: 20px 0;
+        text-decoration-style: dashed;
+        font-size: calc(1em + 1vmin);
+        width: 100%
+    }
 }

@@ -50,7 +50,6 @@ h1, h2, h3, h4{
 
 .socialMediaHolder > .socialMedia{
     color: white;
-    font-size: 20px;
     padding: 50px 0;
     text-decoration-style: dashed;
     font-size: calc(1em + 1vmin);
