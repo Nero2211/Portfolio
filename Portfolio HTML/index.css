@@ -43,15 +43,18 @@ h1, h2, h3, h4{
 
 .socialMediaHolder{
     display: flex;
-    justify-content: center;
+    justify-content: center; //horizontal
+    align-content: center; //vertical
     width: 100%;
 }
 
 .socialMediaHolder > .socialMedia{
     color: white;
     font-size: 20px;
-    padding: 50px;
-    text-decoration-style: dashed
+    padding: 50px 0;
+    text-decoration-style: dashed;
+    font-size: calc(1em + 1vmin);
+    width: calc(100% / 6);
 }
 
 #navbar {
@@ -91,6 +94,7 @@ h1, h2, h3, h4{
 
 .sticky {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%
 }
