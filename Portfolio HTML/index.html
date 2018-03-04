@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="responsive.css">
         <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="imageslideshow.css">
     </head>
     <body>
         
@@ -20,13 +21,13 @@
                 <div class="socialMedia">GITHUB</div>
             </div>
             <div id="section1">
-                <h1 class="title" style="font-size: 200px;">KARTIK</h1>                
-                <h2 style="font-size: 50px;">BACKEND - FRONTEND - UI/UX DESIGNER</h2>
+                <h1 class="title">KARTIK</h1>                
+                <h2 class="subtitle">BACKEND - FRONTEND - UI/UX DESIGNER</h2>
             </div>
             
         </div>
         
-        <div class="parralex" id="test"style="background-image: url(Images/space2.jpg);, text-align: center">
+        <div class="parralex about-me" id="test"style="background-image: url(Images/space2.jpg);, text-align: center">
             <nav id="navbar" class="navigation">
                 <span id="closebtn" onclick="navToggle()">
                   <span class="line1"></span>
@@ -37,7 +38,7 @@
                   <li><a class="menuitems" href="aboutme.html">ABOUT ME</a></li>
                   <li><a class="menuitems" href="hobbies.html">HOBBIES</a></li>
                   <li><a class="menuitems" href="myWork.html">WORK</a></li>
-                  <li><a class="menuitems" href="plan.html">PROGRAMMING PLAN</a></li>
+                  <li><a class="menuitems" href="plan.html">PLAN</a></li>
                   <li><a class="menuitems" >CONTACT ME</a></li>
                 </ul>
             </nav>
@@ -58,10 +59,30 @@
                             
         </div>
         
-        <div class="parralex" style="background-image: url(Images/space4.jpg);">
+        <div class="parralex parralex-slideshow" style="background-image: url(Images/space4.jpg);">
             <div class="subHeading"><a id="hobbies">HOBBIES</a></div>
             
-            <div class="containerWrapper">
+            <div class="slideshow-container">
+                <div class="hobbiesSlides slide">
+                    <img src="Images/android.png" width="300px" height="300px">
+                    <p>Constantly thinking of new solutions to build and impress others. Knowing the fact that a new solution in the market can have a potential of being used by millions of people is the key motivate to my journey. The moment I obtain million of individuals using my solution will be the moment I will be satisfied with my work and this will only be the beginning...</p>
+                </div>
+                
+                <div class="hobbiesSlides slide">
+                    <img src="Images/java.png" width="300px" height="300px">
+                    <p>User Interface design which is also part of building new solutions. Being able to let me creativity take over and design interesting interfaces which really brings the solution to life is also my key focus. The interface is also as much important as the functionality of the solution...</p>
+                </div>
+                
+                <div class="hobbiesSlides slide">
+                    <img src="Images/csharp.png" width="300px" height="300px">
+                    <p>Recently, I've stopped playing games as not many people to play around with but when I do manage to find additional free time, this will be my activity. Gaming was the most entertaining part of my life ever since I got my first computer. I still remember the first website I visited which was...</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            
+            <!--<div class="containerWrapper">
                 <div class="column">
                     <p class="subDescription">Constantly thinking of new solutions to build and impress others. Knowing the fact that a new solution in the market can have a potential of being used by millions of people is the key motivate to my journey. The moment I obtain million of individuals using my solution will be the moment I will be satisfied with my work and this will only be the beginning...</p>
                 </div>
@@ -71,14 +92,33 @@
                 <div class="column">
                     <p class="subDescription">Recently, I've stopped playing games as not many people to play around with but when I do manage to find additional free time, this will be my activity. Gaming was the most entertaining part of my life ever since I got my first computer. I still remember the first website I visited which was...</p>
                 </div>
-            </div>           
+            </div>-->           
             
         </div>
                 
-        <div class="parralex" style="background-image: url(Images/space3.jpg);">
+        <div class="parralex parralex-slideshow" style="background-image: url(Images/space3.jpg);">
             <div class="subHeading"><a id="work">WORK</a></div>
             
-            <div class="containerWrapper" id="ColumnImages">
+            <div class="slideshow-container">
+                <div class="workSlides slide">
+                    <img src="Images/android.png" width="300px" height="300px">
+                    <p>It is difficult to come up with a new idea for an application as majority of the contents are already covered. However, this does not stop me from making application. Constantly, I will look at current applications and make judgements based on their apperance, functionality and features... </p>
+                </div>
+                
+                <div class="workSlides slide">
+                    <img src="Images/java.png" width="300px" height="300px">
+                    <p>As mentioned before, C# was the first language in which I built my first ever working solution. I was fully responsible for coming up with the requirements, design and working code for this application. From that day, I knew I was going to be using C# somewhere along in the future...</p>
+                </div>
+                
+                <div class="workSlides slide">
+                    <img src="Images/csharp.png" width="300px" height="300px">
+                    <p>Building an e-commerce website for college project in HTML, CSS and PHP was really interesting and challenging because CSS in itself is difficult to maintain as numerous aspects have to be taken into consideration i.e. screen size, positing of elements, etc. Having said that, I am now training myself to building more websites with better User Interfaces not just in Photoshop but also in HTML and CSS...</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <!--<div class="containerWrapper" id="ColumnImages">
                 <div class="column" id="column2">
                     <div class="imgWrapper" style="width: 300px; height: 300px">
                         <img class="workImg" src="Images/java.png" style="width: 100%; height: 100%;">
@@ -104,14 +144,33 @@
                         Building an e-commerce website for college project in HTML, CSS and PHP was really interesting and challenging because CSS in itself is difficult to maintain as numerous aspects have to be taken into consideration i.e. screen size, positing of elements, etc. Having said that, I am now training myself to building more websites with better User Interfaces not just in Photoshop but also in HTML and CSS...
                     </p>
                 </div>
-            </div>
+            </div>-->
             
         </div>
         
-        <div class="parralex" style="background-image: url(Images/newbackground1.jpg);">
-            <div class="subHeading"><a id="programmingplan">PROGRAMMING PLAN</a></div>
+        <div class="parralex parralex-slideshow" style="background-image: url(Images/newbackground1.jpg);">
+            <div class="subHeading"><a id="programmingplan">PLAN</a></div>
             
-            <div class="containerWrapper" id="ColumnImages">
+            <div class="slideshow-container">
+                <div class="planSlides slide">
+                    <img src="Images/android.png" width="300px" height="300px">
+                    <p>Android is my favourite operating system on mobile devices because it's flexible and provides you with full control over the phone i.e. downloading music, videos, .APK files directly from the internet. This is the reason why I wanted to persue my career in Java desinging native applications for many devices... </p>
+                </div>
+                 
+                <div class="planSlides slide">
+                    <img src="Images/java.png" width="300px" height="300px">
+                    <p>As mentioned before, C# was the first language in which I built my first ever working solution. I was fully responsible for coming up with the requirements, design and working code for this application. From that day, I knew I was going to be using C# somewhere along in the future...</p>
+                </div>
+                
+                <div class="planSlides slide">
+                    <img src="Images/csharp.png" width="300px" height="300px">
+                    <p>Building an e-commerce website for college project in HTML, CSS and PHP was really interesting and challenging because CSS in itself is difficult to maintain as numerous aspects have to be taken into consideration i.e. screen size, positing of elements, etc. Having said that, I am now training myself to building more websites with better User Interfaces not just in Photoshop but also in HTML and CSS...</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+            <!--<div class="containerWrapper" id="ColumnImages">
                 <div class="column">
                     <img src="Images/android.png" style="width: 300px; height: 300px;">
                     <p class="subDescription">
@@ -131,9 +190,7 @@
                         Building an e-commerce website for college project in HTML, CSS and PHP was really interesting and challenging because CSS in itself is difficult to maintain as numerous aspects have to be taken into consideration i.e. screen size, positing of elements, etc. Having said that, I am now training myself to building more websites with better User Interfaces not just in Photoshop but also in HTML and CSS...
                     </p>
                 </div>
-            </div>
-            
-            
+            </div> -->
             
         </div>
         
@@ -151,7 +208,8 @@
               }
             }
         </script>
-         <script src="navbar.js"></script>
+        <script src="slideshow.js"></script>
+        <script src="navbar.js"></script>
     </body>  
     
 </html>

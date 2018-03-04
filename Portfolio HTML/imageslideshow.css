@@ -3,10 +3,12 @@
 }
 
 .slideshow-container{
-    max-width: 1000px;
-    min-height: 100px;
+    width: 90%;
+    height: 100%;
     position: relative;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainSlideshowContainer{
@@ -28,9 +30,14 @@
     margin: auto;
 }
 
-.mySlides, .myInfoSlides, .mySlidesCSharp, .mySlidesHTML, .mySlidesUE, .myslidesPhotoshop{
+.planSlides, .workSlides, .hobbiesSlides, .mySlides, .myInfoSlides, .mySlidesCSharp, .mySlidesHTML, .mySlidesUE, .myslidesPhotoshop{
     display: none;
-    min-height: 200px;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.slides img{
+    float: left;
 }
 
 .workTextDiv{
