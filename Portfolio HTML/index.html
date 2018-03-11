@@ -4,10 +4,10 @@
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
         <title>NERO Corp Development</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="imageslideshow.css">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/imageslideshow.css">
     </head>
     <body>
         
@@ -194,22 +194,9 @@
             
         </div>
         
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
-        <script src="slideshow.js"></script>
-        <script src="navbar.js"></script>
+        <script src="JavaScript/stickyNavbar.js"></script>
+        <script src="JavaScript/slideshowIndex.js"></script>
+        <script src="JavaScript/navbar.js"></script>
     </body>  
     
 </html>

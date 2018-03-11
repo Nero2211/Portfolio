@@ -1,0 +1,22 @@
+#socialMediaMenu{
+    padding-top: 25px;
+}
+
+.socialMediaItem{
+    width: 35px;
+    height: 35px;
+}
+
+.title a{
+    font-size: 9vw;
+    color: aqua;
+    text-decoration: none;
+}
+
+.title{
+    padding-bottom: 25px;
+}
+
+.navContainer{
+    object-fit: cover;
+}

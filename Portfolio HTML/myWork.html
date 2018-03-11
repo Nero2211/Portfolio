@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>NERO Corp Development</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="imageslideshow.css">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+        <link rel="stylesheet" href="CSS/socialmedia&nav.css">
+        <link rel="stylesheet" href="CSS/divContainer.css">
+        <link rel="stylesheet" href="CSS/subPages.css">
+        <link rel="stylesheet" href="CSS/imageslideshow.css">
         <style>
             .subTitle{
                 font-size: 30px;
@@ -16,17 +20,40 @@
     </head>
     <body>
         
-        <div class="navbarMain">
-            <div class="navbarItem"><a href="index.html">HOME</a></div>
-            <div class="navbarItem"><a href="aboutme.html">ABOUT ME</a></div>
-            <div class="navbarItem"><a href="">HOBBIES</a></div>
-            <div class="navbarItem"><a href="work.html">WORK</a></div>
-            <div class="navbarItem"><a href="plan.html">PLAN</a></div>
+        <div class="navContainer" style="background-image: url(Images/space3.jpg)">
+            <ul id="socialMediaMenu" class="menulist">
+                <li>
+                    <a><img class="socialMediaItem" src="Images/android.png"></a>
+                    <a><img class="socialMediaItem" src="Images/android.png"></a>
+                    <a><img class="socialMediaItem" src="Images/android.png"></a>
+                </li>
+            </ul>
+            
+            
+            <h1 class="title" style="color: aqua"><a href="index.html">KARTIK</a></h1>
+            
+            <!--/////////////////////////////////////////////////////////////-->
+            <!--NAVBAR-->
+            <!--/////////////////////////////////////////////////////////////-->
+            
+            <nav id="navbar" class="navigation">
+                <span id="closebtn" onclick="navToggle()">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </span>
+                <ul id="menu" class="menulist">
+                    <li><a class="menuitems" href="aboutme.html">ABOUT ME</a></li>
+                    <li><a class="menuitems">WORK</a></li>
+                    <li><a class="menuitems" href="plan.html">PLAN</a></li>
+                    <li><a class="menuitems">CONTACT ME</a></li>
+                </ul>
+            </nav>
         </div>
         
         
         
-        <h2>MY WORK</h2>
+        <!--<h2>MY WORK</h2>
         <div class="slideshow-container">
             <div class="myInfoSlides fade">
                 <div class="workTextDiv">
@@ -55,37 +82,47 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-        </div>
+        </div>-->
         
         
-        <div class="mainSlideshowContainer">
-            <div class="slideshow-containerLeft">
-                <div class="mySlidesAndroid fade">
-                    <div class="numberText">PROJECT 1 IMAGE 1</div>
-                    <img src="Images/background1.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND ONE</div>
-                </div>
-
-                <div class="mySlidesAndroid fade">
-                    <div class="numberText">PROJECT 1 IMAGE 2</div>
-                    <img src="Images/background2.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND TWO</div>
-
-                </div>
-
-                <div class="mySlidesAndroid fade">
-                    <div class="numberText">PROJECT 1 IMAGE 3</div>
-                    <img src="Images/background3.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND THREE</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div>
-            
-            <div class="infoContainerRight">
+        <!--/////////////////////////////////////////////////////////////-->
+        <!--ANDROID SLIESHOW-->
+        <!--/////////////////////////////////////////////////////////////-->
+        <!--
+        <div class="parralex" style="background-image: url(Images/background1.jpg)">
+            <div class="mainSlideshowContainer">
+                
                 <h3 class="subTitle">Android</h3>
-                <div>
+                
+                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
+                <br><br>
+                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
+                <div class="slideshow-containerLeft">
+                    <div class="mySlidesAndroid fade">
+                        <div class="numberText">PROJECT 1 IMAGE 1</div>
+                        <img src="Images/background1.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND ONE</div>
+                    </div>
+
+                    <div class="mySlidesAndroid fade">
+                        <div class="numberText">PROJECT 1 IMAGE 2</div>
+                        <img src="Images/background2.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND TWO</div>
+
+                    </div>
+
+                    <div class="mySlidesAndroid fade">
+                        <div class="numberText">PROJECT 1 IMAGE 3</div>
+                        <img src="Images/background3.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND THREE</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+
+                <div class="infoContainerRight">
+                    <h3>PROJECT TITLE</h3>
                     <p>
                         information for project 1
                     </p>
@@ -95,70 +132,90 @@
         <br>
         
         
-        
-        <div class="mainSlideshowContainer">
-            <div class="infoContainerLeft">
-                <h3 class="subTitle">C#</h3>
-                <div>
+        <!--/////////////////////////////////////////////////////////////-->
+        <!--C# SLIESHOW-->
+        <!--/////////////////////////////////////////////////////////////-->
+                <!--
+        <div class="parralex" style="background-image: url(Images/background2.jpg)">
+            <div class="mainSlideshowContainer">
+                
+                <h3 class="subTitle">c#</h3>
+                
+                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
+                <br><br>
+                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
+                <div class="infoContainerLeft">
+                    <h3>PROJECT TITLE</h3>
                     <p>
-                        information for first background
+                        information for project 1
                     </p>
                 </div>
-            </div>
-            
-            <div class="slideshow-containerRight">
-                <div class="mySlidesCSharp fade">
-                    <div class="numberText">PROJECT 1 IMAGE 1</div>
-                    <img src="Images/background1.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND ONE</div>
-                </div>
 
-                <div class="mySlidesCSharp fade">
-                    <div class="numberText">PROJECT 1 IMAGE 2</div>
-                    <img src="Images/background2.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND TWO</div>
-                </div>
+                <div class="slideshow-containerRight">
+                    <div class="mySlidesCSharp fade">
+                        <div class="numberText">PROJECT 1 IMAGE 1</div>
+                        <img src="Images/background1.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND ONE</div>
+                    </div>
 
-                <div class="mySlidesCSharp fade">
-                    <div class="numberText">PROJECT 1 IMAGE 3</div>
-                    <img src="Images/background3.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND THREE</div>
-                </div>
+                    <div class="mySlidesCSharp fade">
+                        <div class="numberText">PROJECT 1 IMAGE 2</div>
+                        <img src="Images/background2.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND TWO</div>
+                    </div>
 
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    <div class="mySlidesCSharp fade">
+                        <div class="numberText">PROJECT 1 IMAGE 3</div>
+                        <img src="Images/background3.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND THREE</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
             </div>
         </div>
         <br>
         
-        <div class="mainSlideshowContainer">
-            <div class="slideshow-containerLeft">
-                <div class="mySlidesHTML fade">
-                    <div class="numberText">PROJECT 1 IMAGE 1</div>
-                    <img src="Images/background1.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND ONE</div>
-                </div>
-
-                <div class="mySlidesHTML fade">
-                    <div class="numberText">PROJECT 1 IMAGE 2</div>
-                    <img src="Images/background2.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND TWO</div>
-
-                </div>
-
-                <div class="mySlidesHTML fade">
-                    <div class="numberText">PROJECT 1 IMAGE 3</div>
-                    <img src="Images/background3.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND THREE</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-            </div>
-            
-            <div class="infoContainerRight">
+        
+        <!--/////////////////////////////////////////////////////////////-->
+        <!--HTML & CSS SLIESHOW-->
+        <!--/////////////////////////////////////////////////////////////-->
+                <!--
+        <div class="parralex" style="background-image: url(Images/background1.jpg)">
+            <div class="mainSlideshowContainer">
+                
                 <h3 class="subTitle">HTML & CSS</h3>
-                <div>
+                
+                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
+                <br><br>
+                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
+                <div class="slideshow-containerLeft">
+                    <div class="mySlidesHTML fade">
+                        <div class="numberText">PROJECT 1 IMAGE 1</div>
+                        <img src="Images/background1.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND ONE</div>
+                    </div>
+
+                    <div class="mySlidesHTML fade">
+                        <div class="numberText">PROJECT 1 IMAGE 2</div>
+                        <img src="Images/background2.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND TWO</div>
+
+                    </div>
+
+                    <div class="mySlidesHTML fade">
+                        <div class="numberText">PROJECT 1 IMAGE 3</div>
+                        <img src="Images/background3.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND THREE</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                </div>
+
+                <div class="infoContainerRight">
+                    <h3>PROJECT TITLE</h3>
                     <p>
                         information for project 1
                     </p>
@@ -167,69 +224,93 @@
         </div>
         <br>
         
-        <div class="mainSlideshowContainer">        
-            <div class="infoContainerLeft">
-                <h3 class="subTitle">Photoshop</h3>
-                <div>
+        
+        <!--/////////////////////////////////////////////////////////////-->
+        <!--PHOTOSHOP SLIESHOW-->
+        <!--/////////////////////////////////////////////////////////////-->
+                <!--
+        <div class="parralex" style="background-image: url(Images/background1.jpg)">
+            <div class="mainSlideshowContainer" id="slideshow-photoshop">
+                
+                <h3 class="subTitle">PHOTOSHOP</h3>
+                
+                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
+                <br><br>
+                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
+                
+                <div class="infoContainerLeft">
+                    <h3>PROJECT TITLE</h3>
                     <p>
                         information for project 1
                     </p>
                 </div>
-            </div>
-            
-            <div class="slideshow-containerRight">
-                <div class="mySlidesPhotoshop fade">
-                    <div class="numberText">PROJECT 1 IMAGE 1</div>
-                    <img src="Images/background1.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND ONE</div>
-                </div>
 
-                <div class="mySlidesPhotoshop fade">
-                    <div class="numberText">PROJECT 1 IMAGE 2</div>
-                    <img src="Images/background2.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND TWO</div>
-                </div>
+                <div class="slideshow-containerRight">
+                    <div class="mySlidesPhotoshop fade">
+                        <div class="numberText">PROJECT 1 IMAGE 1</div>
+                        <img src="Images/background1.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND ONE</div>
+                    </div>
 
-                <div class="mySlidesPhotoshop fade">
-                    <div class="numberText">PROJECT 1 IMAGE 3</div>
-                    <img src="Images/background3.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND THREE</div>
-                </div>
+                    <div class="mySlidesPhotoshop fade">
+                        <div class="numberText">PROJECT 1 IMAGE 2</div>
+                        <img src="Images/background2.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND TWO</div>
+                    </div>
 
-                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    <div class="mySlidesPhotoshop fade">
+                        <div class="numberText">PROJECT 1 IMAGE 3</div>
+                        <img src="Images/background3.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND THREE</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                </div>
             </div>
         </div>
         <br>
         
-        <div class="mainSlideshowContainer">
-            <div class="slideshow-containerLeft">
-                <div class="mySlidesUE fade">
-                    <div class="numberText">PROJECT 1 IMAGE 1</div>
-                    <img src="Images/background1.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND ONE</div>
+        
+        <!--/////////////////////////////////////////////////////////////-->
+        <!--UNREAL ENGINE SLIESHOW-->
+        <!--/////////////////////////////////////////////////////////////-->
+                <!--
+        <div class="parralex" style="background-image: url(Images/background1.jpg)">
+            <div class="mainSlideshowContainer">
+                
+                <h3 class="subTitle">UNREAL ENGINE</h3>
+                
+                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
+                <br><br>
+                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
+                
+                <div class="slideshow-containerLeft">
+                    <div class="mySlidesUE fade">
+                        <div class="numberText">PROJECT 1 IMAGE 1</div>
+                        <img src="Images/background1.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND ONE</div>
+                    </div>
+
+                    <div class="mySlidesUE fade">
+                        <div class="numberText">PROJECT 1 IMAGE 2</div>
+                        <img src="Images/background2.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND TWO</div>
+
+                    </div>
+
+                    <div class="mySlidesUE fade">
+                        <div class="numberText">PROJECT 1 IMAGE 3</div>
+                        <img src="Images/background3.jpg" style="width: 100%">
+                        <div class="text">THIS IS BACKGROUND THREE</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
                 </div>
 
-                <div class="mySlidesUE fade">
-                    <div class="numberText">PROJECT 1 IMAGE 2</div>
-                    <img src="Images/background2.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND TWO</div>
-
-                </div>
-
-                <div class="mySlidesUE fade">
-                    <div class="numberText">PROJECT 1 IMAGE 3</div>
-                    <img src="Images/background3.jpg" style="width: 100%">
-                    <div class="text">THIS IS BACKGROUND THREE</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-            </div>
-            
-            <div class="infoContainerRight">
-                <h3 class="subTitle">Unreal Engine</h3>
-                <div>
+                <div class="infoContainerRight">
+                    <h3>PROJECT TITLE</h3>
                     <p>
                         information for project 1
                     </p>
@@ -238,7 +319,7 @@
         </div>
         <br>    
         
-        <script>
+        <!--<script>
             var slideIndex = 0;
             showInfoSlides();
             
@@ -265,42 +346,9 @@
                 setTimeout(showInfoSlides, 5000);
                 
             }
-        </script>
-        
-        <script>
-            var slideIndex = [1,1,1,1,1];
-            var slideId = ["mySlidesAndroid", "mySlidesCSharp", "mySlidesHTML", "mySlidesPhotoshop", "mySlidesUE"];
-            //var slideInfo = ["info", "info", "info", "info", "info", "info"];
-                        
-                showSlides(1,0);
-                showSlides(1,1);
-                showSlides(1,2);
-                showSlides(1,3);
-                showSlides(1,4);
-                
-            
-            function plusSlides(n, no){
-                showSlides(slideIndex[no] += n, no);
-            }
-            
-            function showSlides(n, no){
-                var i;
-                var x = document.getElementsByClassName(slideId[no]);
-                //var y = document.getElementsByClassName(slideInfo[no]);
-                if( n > x.length) {
-                   slideIndex[no] = 1
-                   }
-                if(n < 1){
-                    slideIndex[no] = x.length
-                }
-                for(i = 0; i < x.length; i++){
-                    x[i].style.display = "none";
-                }
-                
-                x[slideIndex[no]-1].style.display = "block";
-            }
-            
-        </script>
+        </script>-->
+        <script src="JavaScript/sections.js"></script>
+        <script src="JavaScript/slideshowMyWork.js"></script>
         
     </body>  
 </html>
