@@ -9,13 +9,12 @@
         <link rel="stylesheet" href="CSS/socialmedia&nav.css">
         <link rel="stylesheet" href="CSS/divContainer.css">
         <link rel="stylesheet" href="CSS/subPages.css">
+        <link rel="stylesheet" href="CSS/imageslideshow.css">
     </head>
     <body>
         <div class="navContainer" style="background-image: url(Images/space3.jpg)">
             <ul id="socialMediaMenu" class="menulist">
                 <li>
-                    <a><img class="socialMediaItem" src="Images/android.png"></a>
-                    <a><img class="socialMediaItem" src="Images/android.png"></a>
                     <a><img class="socialMediaItem" src="Images/android.png"></a>
                     <a><img class="socialMediaItem" src="Images/android.png"></a>
                     <a><img class="socialMediaItem" src="Images/android.png"></a>
@@ -37,7 +36,6 @@
                 </span>
                 <ul id="menu" class="menulist">
                     <li><a class="menuitems">ABOUT ME</a></li>
-                    <li><a class="menuitems" href="hobbies.html">HOBBIES</a></li>
                     <li><a class="menuitems" href="myWork.html">WORK</a></li>
                     <li><a class="menuitems" href="plan.html">PLAN</a></li>
                     <li><a class="menuitems">CONTACT ME</a></li>
@@ -45,7 +43,7 @@
             </nav>
         </div>
         
-        <div class="parralex" style="background-image: url(Images/space1.jpg)">
+        <div class="parralex" style="background-image: url(Images/Edited/502091.png)">
             <!--ABOUT ME-->
             <h2 class="subHeadingSubPage" id="aboutMeHeading">A FEW WORDS ABOUT ME</h2>
             <div class="container">
@@ -60,7 +58,7 @@
             </div>
         </div>
         
-        <div class="parralex" style="background-image: url(Images/background3.jpg)">
+        <div class="parralex" style="background-image: url(Images/Edited/500288.png)">
             <!--EDUCATION-->
             <h2 class="subHeadingSubPage" id="aboutMeHeading">EDUCATION</h2>
             <div class="container">
@@ -75,7 +73,7 @@
             </div>
         </div>
         
-        <div class="parralex" style="background-image: url(Images/background4.jpg)">
+        <div class="parralex" style="background-image: url(Images/Edited/502091.png)">
             <!--SKILLS/KNOWLEDGE/EXPERIENCE-->
             <h2 class="subHeadingSubPage" id="aboutMeHeading">SKILLS & KNOWLEDGE</h2>
             <div class="container">
@@ -90,22 +88,31 @@
             </div>
         </div>
         
-        <div class="parralex" style="background-image: url(Images/background1.jpg)">
-            <!--CURRENTLY WHAT I'M DOING/WORKING WITH/DEVELOPING (CURRENT SITUATION)-->    
-            <h2 class="subHeadingSubPage" id="aboutMeHeading">CURRENT SITUATION</h2>
-            <div class="container">
-                <div class="leftContainer">
-                    <img src="Images/android.png" style="width: 500px; height: 500px;">
+        <div class="parralex" style="background-image: url(Images/Edited/500288.png)">
+            <h2 class="subHeadingSubPage" id="aboutMeHeading">HOBBIES</h2>
+            <div class="hobbiesContainer">
+                <div class="hobbiesSlides slide">
+                    <img src="Images/android.png" width="300px" height="300px">
+                    <p class="subInformation">Constantly thinking of new solutions to build and impress others. Knowing the fact that a new solution in the market can have a potential of being used by millions of people is the key motivate to my journey. The moment I obtain million of individuals using my solution will be the moment I will be satisfied with my work and this will only be the beginning...</p>
                 </div>
-                <div class="rightContainer">
-                    <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
-                    <br><br>
-                    The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
+
+                <div class="hobbiesSlides slide">
+                    <img src="Images/java.png" width="300px" height="300px">
+                    <p class="subInformation">User Interface design which is also part of building new solutions. Being able to let me creativity take over and design interesting interfaces which really brings the solution to life is also my key focus. The interface is also as much important as the functionality of the solution...</p>
+                </div>
+
+                <div class="hobbiesSlides slide">
+                    <img src="Images/csharp.png" width="300px" height="300px">
+                    <p class="subInformation">Recently, I've stopped playing games as not many people to play around with but when I do manage to find additional free time, this will be my activity. Gaming was the most entertaining part of my life ever since I got my first computer. I still remember the first website I visited which was...</p>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
             </div>
-        </div>
                 
         <script src="JavaScript/stickyNavbar.js"></script>
         <script src="JavaScript/navbar.js"></script>
+        <script src="JavaScript/hobbySlideshow.js"></script>
     </body>  
 </html>

@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+.hobbiesContainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .mainSlideshowContainer{
     display: inline-block;
     padding: 50px;
