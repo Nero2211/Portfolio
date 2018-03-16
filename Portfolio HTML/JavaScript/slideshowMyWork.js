@@ -16,19 +16,22 @@ function plusSlides(n, no){
 function showSlides(n, no){
     var i;
     var x = document.getElementsByClassName(slideId[no]);
+    var projectWrapperId = document.getElementById('1');
+    console.log(projectWrapperId)
     //var y = document.getElementsByClassName(slideInfo[no]);
     if( n > x.length) {
        slideIndex[no] = 1
+//        projectWrapperId.style = "display: none";
+//        projectWrapperId.nextSibling.style = "display: block";
        }
     if(n < 1){
         slideIndex[no] = x.length
     }
     for(i = 0; i < x.length; i++){
         x[i].style.display = "none";
+        
     }
-
+    
+    
     x[slideIndex[no]-1].style.display = "block";
 }
-
-// everything below will go to separate file
-

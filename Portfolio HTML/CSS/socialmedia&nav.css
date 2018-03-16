@@ -5,11 +5,18 @@
 .socialMediaItem{
     width: 35px;
     height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.socialMedia{
+    text-decoration: none;
+    color : white;
 }
 
 .title a{
     font-size: 9vw;
-    color: aqua;
+    color: white;
     text-decoration: none;
 }
 

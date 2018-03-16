@@ -23,9 +23,61 @@
     #section1 > .subtitle {
         font-size: calc(2em + 1vmin);
     }
+    
+    .subHeading > .subTitle2{
+        font-size: calc(6em + 1vmin);
+    }
+    
+    .center > .subDescription{
+        font-size: calc(0.75em + 1vmin);
+    }
+    
+    .subHeadingSubPage{
+        font-size: calc(4em + 1vmin);
+        padding: 5px;
+    }
+    
+    .leftContainer{
+        width: 50% !important;
+    }
+    
+    .rightContainer{
+        width: 50% !important;
+    }
+    
+    .leftContainer > img{
+        width: 50% !important;
+        height: 100% !important;
+    }
+    
+    .rightContainer > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+        padding: 0px;
+    }
+    
+    .container{
+        display: block !important;
+        padding-top: 100px !important;
+    }
+    
+    .hobbiesSlides > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+    }
+    
+    .hobbiesSlides > img{
+        width: 30% !important;
+        height: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 950px){
+    
+    .navigation.sticky {
+        position: sticky !important;
+    }
+    
     .socialMediaHolder{
         flex-direction: column;
         padding: 20px 0;
@@ -53,6 +105,55 @@
     #section1 > .subtitle {
         font-size: calc(1.375em + 1vmin); //used to be 50px which is 1/4 of                                       //title 200px
     }
+    
+    .subHeading > .subTitle2{
+        font-size: calc(4em + 1vmin);
+    }
+    
+    .center > .subDescription{
+        font-size: calc(0.60em + 1vmin);
+    }
+    
+    .subHeadingSubPage{
+        font-size: calc(3em + 1vmin);
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    .leftContainer > img{
+        width: 30% !important;
+        height: 100% !important;
+    }
+    
+    .rightContainer > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+        padding: 5px !important;
+    }
+    
+    .leftContainer{
+        width: 100% !important;
+    }
+    
+    .rightContainer{
+        width: 100% !important;
+    }
+    
+    .container{
+        display: inline-grid !important;
+        padding-top: 5px !important;
+    }
+    
+    .hobbiesSlides > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+    }
+    
+    .hobbiesSlides > img{
+        width: 30% !important;
+        height: 100% !important;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -63,4 +164,130 @@
     #section1 > .subtitle {
         font-size: calc(0.75em + 1vmin);
     }
+    
+    .subHeading > .subTitle2{
+        font-size: calc(3em + 1vmin);
+    }
+    
+    .center > .subDescription{
+        font-size: calc(0.60em + 1vmin);
+    }
+    
+    .buttonWrapper > .button{
+        font-size: calc(1em + 1vmin);
+    }
+    
+    .workSlides > img{
+        width: 175px;
+        height: 175px;
+    }
+    
+    .workSlides > p{
+        font-size: calc(0.60em + 1vmin);
+        color: white;
+        font-style: italic;
+    }
+    
+    .planSlides > img{
+        width: 175px;
+        height: 175px;
+    }
+    
+    .planSlides > p{
+        font-size: calc(0.60em + 1vmin);
+        color: white;
+        font-style: italic;
+    }
+    
+    .subHeadingSubPage{
+        font-size: calc(2em + 1vmin);
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
+    }
+    
+    .leftContainer > img{
+        width: 30% !important;
+        height: 100% !important;
+    }
+    
+    .rightContainer > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+        padding: 0px !important;
+    }
+    
+    .leftContainer{
+        width: 100% !important;
+    }
+    
+    .rightContainer{
+        width: 100% !important;
+    }
+
+    .container{
+        display: inline-grid !important;
+        padding-top: 0px !important;
+    }
+    
+    .hobbiesSlides > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+    }
+    
+    .hobbiesSlides > img{
+        width: 30% !important;
+        height: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape){
+    .socialMediaHolder{
+        flex-direction: row;
+    }
+    
+    .center{
+        width: 75%;
+    }
+    .buttonWrapper > .button{
+        font-size: calc(1em + 1vmin);
+    }
+    
+    .workSlides > img{
+        width: 175px;
+        height: 175px;
+    }
+    
+    .workSlides > p{
+        font-size: calc(0.60em + 1vmin);
+        color: white;
+        font-style: italic;
+    }
+    
+    .planSlides > img{
+        width: 175px;
+        height: 175px;
+    }
+    
+    .planSlides > p{
+        font-size: calc(0.60em + 1vmin);
+        color: white;
+        font-style: italic;
+    }
+    
+    .slide{
+        flex-direction: row;
+    }
+    
+    .subHeading > .subTitle2 {
+    font-size: calc(3em + 1vmin);
+    }
+    
+    .subHeading{
+        padding-top: 0px;
+    }
+    
+    #section1{
+        padding-top: 10%;
+    }
+    
 }

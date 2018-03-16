@@ -8,6 +8,7 @@ var sections = [
         initialInfoSide: "Right",
         projects: [
             {
+                id: 1,
                 title: "project 1",
                 info: "qwerty",
                 images: [
@@ -24,6 +25,7 @@ var sections = [
                 ]
             },
             {
+                id: 2,
                 title: "project 2",
                 info: "qwerty 2",
                 images: [
@@ -49,6 +51,7 @@ var sections = [
         initialInfoSide: "Left",
         projects: [
             {
+                id: 3,
                 title: "project 1",
                 info: "qwerty",
                 images: [
@@ -65,6 +68,7 @@ var sections = [
                 ]
             },
             {
+                id: 4,
                 title: "project 2",
                 info: "qwerty 2",
                 images: [
@@ -90,6 +94,7 @@ var sections = [
         initialInfoSide: "Left",
         projects: [
             {
+                id: 5,
                 title: "project 1",
                 info: "qwerty",
                 images: [
@@ -106,6 +111,7 @@ var sections = [
                 ]
             },
             {
+                id: 6,
                 title: "project 2",
                 info: "qwerty 2",
                 images: [
@@ -156,7 +162,7 @@ function slideshowContainer(currentProject, initialSlideshowSide, output){
 
 function infoContainer(currentProject, initialInfoSide, output){
     output +=
-        '<div class="infoContainer"'+initialInfoSide+'>' +
+        '<div class="infoContainer'+initialInfoSide+'">' +
             '<h3>'+currentProject.title+'</h3>'+
             '<p>'+currentProject.info+'</p>'+
         '</div>'
@@ -168,9 +174,17 @@ function infoContainer(currentProject, initialInfoSide, output){
  */
 function generateProjects(sectionProjects, initialSlideshowSide, initialInfoSide, output) {
     var amountOfProjects = sectionProjects.length;
+    
+    function display(i){
+        if(i === 0) return "display: block";
+        else return "display: none";
+    }
+    
     for(var i=0; i < amountOfProjects; i++){
-        output += slideshowContainer(sectionProjects[i], initialSlideshowSide, output);
-        output += infoContainer(sectionProjects[i], initialInfoSide, output);  
+        output += '<div id="'+sectionProjects[i].id+'" class="projectWrapper" style="'+display(i)+'">';
+            output = slideshowContainer(sectionProjects[i], initialSlideshowSide, output);
+            output = infoContainer(sectionProjects[i], initialInfoSide, output); 
+        output += '</div>';
     }
     
     return output;
@@ -182,13 +196,13 @@ function generateSection(i, output){
     var sectionInitialInfoSide = currentSection.initialInfoSide;
     var sectionProjects = sections[i].projects;
     
-    output =
+    output +=
         '<div class="parralex" style="background-image: url('+currentSection.sectionBackground+')">'+
             '<div class="mainSlideshowContainer">'+
                 '<h3 class="subTitle">'+currentSection.subTitle+'</h3>'+
                 '<p class="subInformation">'+currentSection.subInformation+'</p>';
     output = generateProjects(sectionProjects, sectionInitialSlideshowSide, sectionInitialInfoSide, output);
-    output += 
+    output +=
             '</div>' +
         '</div>';
     return output;
@@ -197,8 +211,8 @@ function generateSection(i, output){
 function generateSections(){
     var output = '';
     
-    output += generateSection(0, output);
-    output += generateSection(1, output);
+    output = generateSection(0, output);
+    output = generateSection(1, output);
     
     var sectionsContainer = document.createElement('div');
     sectionsContainer.innerHTML = output;
