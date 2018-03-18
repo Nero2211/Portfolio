@@ -1,0 +1,34 @@
+.header-wrapper {
+    height: 30%;
+}
+
+.projects_wrapper {
+    width: 100%;
+    overflow: auto;
+} 
+
+.projects {
+    height: 100%;
+    display: inline-flex;
+}
+
+.projects > .project {
+    width: 30vw;
+    height: 30vw;
+    border: 1px solid white;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+    padding: 1vw;
+}
+
+.project > .project_title {
+    height: 20%;
+}
+
+.project > .project_description {
+    height: 60%;
+}
+
+.project > button {
+    height: 20%;
+}

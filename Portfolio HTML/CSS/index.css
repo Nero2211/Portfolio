@@ -26,6 +26,10 @@ ul, li {
     padding: 0;
 }
 
+.sections-wrapper{
+    height: 100%;
+}
+
 .socialMediaItem{
     text-decoration: none;
     color: white;

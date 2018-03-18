@@ -1,220 +1,83 @@
+function showSlideshowModal(sectionId, clickedProjectId){
+    var modalContainer = document.createElement('div');
+    modalContainer.setAttribute("id", "modal-container");
 
-var sections = [
-    {
-        subTitle: "android",
-        subInformation: "info",
-        sectionBackground: "Images/background2.jpg",
-        initialSlideshowSide: "Left",
-        initialInfoSide: "Right",
-        projects: [
-            {
-                id: 1,
-                title: "project 1",
-                info: "qwerty",
-                images: [
-                    {
-                        title: "project 1 image",
-                        src: "Images/background1.jpg",
-                        text: "background 1"
-                    },
-                    {
-                        title: "project 1 image",
-                        src: "Images/background2.jpg",
-                        text: "background 2"
-                    }
-                ]
-            },
-            {
-                id: 2,
-                title: "project 2",
-                info: "qwerty 2",
-                images: [
-                    {
-                        title: "project 2 image",
-                        src: "Images/background1.jpg",
-                        text: "background 1"
-                    },
-                    {
-                        title: "project 2 image",
-                        src: "Images/background2.jpg",
-                        text: "background 2"
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        subTitle: "c#",
-        subInformation: "info",
-        sectionBackground: "Images/background2.jpg",
-        initialSlideshowSide: "Right",
-        initialInfoSide: "Left",
-        projects: [
-            {
-                id: 3,
-                title: "project 1",
-                info: "qwerty",
-                images: [
-                    {
-                        title: "project 1 image",
-                        src: "Images/background1.jpg",
-                        text: "background 1"
-                    },
-                    {
-                        title: "project 1 image",
-                        src: "Images/background2.jpg",
-                        text: "background 2"
-                    }
-                ]
-            },
-            {
-                id: 4,
-                title: "project 2",
-                info: "qwerty 2",
-                images: [
-                    {
-                        title: "project 2 image",
-                        src: "Images/background1.jpg",
-                        text: "background 1"
-                    },
-                    {
-                        title: "project 2 image",
-                        src: "Images/background2.jpg",
-                        text: "background 2"
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        subTitle: "Unreal Engine",
-        subInformation: "info",
-        sectionBackground: "Images/background2.jpg",
-        initialSlideshowSide: "Right",
-        initialInfoSide: "Left",
-        projects: [
-            {
-                id: 5,
-                title: "project 1",
-                info: "qwerty",
-                images: [
-                    {
-                        title: "project 1 image",
-                        src: "Images/background1.jpg",
-                        text: "background 1"
-                    },
-                    {
-                        title: "project 1 image",
-                        src: "Images/background2.jpg",
-                        text: "background 2"
-                    }
-                ]
-            },
-            {
-                id: 6,
-                title: "project 2",
-                info: "qwerty 2",
-                images: [
-                    {
-                        title: "project 2 image",
-                        src: "Images/background1.jpg",
-                        text: "background 1"
-                    },
-                    {
-                        title: "project 2 image",
-                        src: "Images/background2.jpg",
-                        text: "background 2"
-                    }
-                ]
-            },
-        ]
-    }
-]
+    document.body.appendChild(modalContainer);
+    generateModalContent(sectionId, clickedProjectId);
+}
 
-
-function slides(currentProject, output) {
-    var currentProjectImages = currentProject.images;
-    var amountOfImages = currentProjectImages.length;
-    
-    for(var i=0; i < amountOfImages; i++ ){
-        output +=
-            '<div class="mySlidesAndroid fade">' +
-                '<div class="numberText">'+ currentProjectImages[i].title +'</div>' +
-                '<img src='+currentProjectImages[i].src+' style="width: 100%">' +
-                '<div class="text">'+ currentProjectImages[i].text +'</div>' +
-            '</div>'
+function projectInfo(currentProject, output){
+    for(var i = 0; i< currentProject.info.length; i++){
+        output += '<li>'+currentProject.info[i]+'</li>';
     }
     
     return output;
 }
 
-
-function slideshowContainer(currentProject, initialSlideshowSide, output){
-    output += 
-        '<div class="slideshow-container'+initialSlideshowSide+'">';
-    output = slides(currentProject, output);
-    output += 
-            '<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>' +
-            '<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>'+
-        '</div>';
-    return output;
-}
-
-function infoContainer(currentProject, initialInfoSide, output){
-    output +=
-        '<div class="infoContainer'+initialInfoSide+'">' +
-            '<h3>'+currentProject.title+'</h3>'+
-            '<p>'+currentProject.info+'</p>'+
-        '</div>'
-    return output;
-}
-
-/*
- * @param {string} initialSide - Capitalized initial side
- */
-function generateProjects(sectionProjects, initialSlideshowSide, initialInfoSide, output) {
+function generateProjects(sectionId, sectionProjects, output) {
     var amountOfProjects = sectionProjects.length;
-    
-    function display(i){
-        if(i === 0) return "display: block";
-        else return "display: none";
-    }
-    
+   
     for(var i=0; i < amountOfProjects; i++){
-        output += '<div id="'+sectionProjects[i].id+'" class="projectWrapper" style="'+display(i)+'">';
-            output = slideshowContainer(sectionProjects[i], initialSlideshowSide, output);
-            output = infoContainer(sectionProjects[i], initialInfoSide, output); 
-        output += '</div>';
+        output += '<li id="'+sectionProjects[i].id+'" class="project">' +
+                      '<div class="project_title">'+sectionProjects[i].title+'</div>' +
+                      '<ul class="project_subtitle">';
+        output = projectInfo(sectionProjects[i], output);
+        output +=     '</ul>' +
+                      '<button onclick="showSlideshowModal('+sectionId+', '+i+')">View Project</button>'+
+                  '</li>';
     }
     
     return output;
 }
 
-function generateSection(i, output){
-    var currentSection = sections[i];
-    var sectionInitialSlideshowSide = currentSection.initialSlideshowSide;
-    var sectionInitialInfoSide = currentSection.initialInfoSide;
-    var sectionProjects = sections[i].projects;
+function generateSection(sectionId, output){
+    var currentSection = sections[sectionId];
+    var sectionProjects = sections[sectionId].projects;
     
     output +=
         '<div class="parralex" style="background-image: url('+currentSection.sectionBackground+')">'+
-            '<div class="mainSlideshowContainer">'+
-                '<h3 class="subTitle">'+currentSection.subTitle+'</h3>'+
-                '<p class="subInformation">'+currentSection.subInformation+'</p>';
-    output = generateProjects(sectionProjects, sectionInitialSlideshowSide, sectionInitialInfoSide, output);
-    output +=
+            '<div class="header-wrapper">'+
+                '<h3 class="sectionTitle">'+currentSection.subTitle+'</h3>'+
+                '<p class="sectionSubinformation">'+currentSection.subInformation+'</p>' +
+            '</div>' +
+            '<div class="projects_wrapper">'+
+                '<ul class="projects">';
+    output = generateProjects(sectionId, sectionProjects, output);
+    output +=   '</ul>' +
             '</div>' +
         '</div>';
+    
+    return output;
+}
+
+function nav(output){
+    output += '<nav id="navbar" class="navigation">'+
+                '<span id="closebtn" onclick="navToggle()">'+
+                  '<span class="line1"></span>'+
+                  '<span class="line2"></span>'+
+                  '<span class="line3"></span>'+
+                '</span>'+
+                '<ul id="menu" class="menulist">'+
+                  '<li><a class="menuitems" href="aboutme.html">ABOUT ME</a></li>'+
+                  '<li><a class="menuitems" href="myWork.html">WORK</a></li>'+
+                  '<li><a class="menuitems" href="plan.html">PLAN</a></li>'+
+                  '<li><a class="menuitems" >CONTACT ME</a></li>'+
+                '</ul>'+
+            '</nav>';
+    
     return output;
 }
 
 function generateSections(){
     var output = '';
     
-    output = generateSection(0, output);
-    output = generateSection(1, output);
+    output = nav(output);
+    for(var sectionId = 0; sectionId < sections.length; sectionId++) {
+        output = generateSection(sectionId, output);
+    }
     
     var sectionsContainer = document.createElement('div');
+    sectionsContainer.classList.add("sections-wrapper")
     sectionsContainer.innerHTML = output;
     document.body.appendChild(sectionsContainer);
 }

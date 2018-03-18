@@ -3,8 +3,8 @@
 }
 
 .slideshow-container{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: calc(100% - 10px);
     position: relative;
     display: flex;
     justify-content: center;
@@ -38,10 +38,11 @@
     margin: auto;
 }
 
-.planSlides, .workSlides, .hobbiesSlides, .mySlides, .myInfoSlides, .mySlidesCSharp, .mySlidesHTML, .mySlidesUE, .myslidesPhotoshop{
+.planSlides, .workSlides, .hobbiesSlides, .mySlides, .mySlidesAndroid, .myInfoSlides, .mySlidesCSharp, .mySlidesHTML, .mySlidesUE, .myslidesPhotoshop{
     display: none;
     align-items: center;
     margin: 0 50px;
+    position: relative;
 }
 
 .slides img{
@@ -102,7 +103,6 @@
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
-    position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center
@@ -114,6 +114,15 @@
     padding: 18px 28px;
     position: absolute;
     top: 0;
+}
+
+.numberOfText {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 18px 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .dot{

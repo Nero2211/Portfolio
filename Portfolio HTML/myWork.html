@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="CSS/divContainer.css">
         <link rel="stylesheet" href="CSS/subPages.css">
         <link rel="stylesheet" href="CSS/imageslideshow.css">
+        <link rel="stylesheet" href="CSS/workGrid.css">
+        <link rel="stylesheet" href="CSS/modal.css">
         <style>
             .subTitle{
                 font-size: 30px;
@@ -21,7 +23,7 @@
     </head>
     <body>
         
-        <div class="navContainer" style="background-image: url(Images/space3.jpg)">
+        <div class="navContainer" style="background-image: url(Images/space3.jpg)">        
             <ul id="socialMediaMenu" class="menulist">
                 <li>
                     <a><img class="socialMediaItem" src="Images/android.png"></a>
@@ -38,321 +40,98 @@
             <!--/////////////////////////////////////////////////////////////-->
             <!--NAVBAR-->
             <!--/////////////////////////////////////////////////////////////-->
-            
-            <nav id="navbar" class="navigation">
-                <span id="closebtn" onclick="navToggle()">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                    <span class="line3"></span>
-                </span>
-                <ul id="menu" class="menulist">
-                    <li><a class="menuitems" href="aboutme.html">ABOUT ME</a></li>
-                    <li><a class="menuitems" href="hobbies.html">HOBBIES</a></li>
-                    <li><a class="menuitems">WORK</a></li>
-                    <li><a class="menuitems" href="plan.html">PLAN</a></li>
-                    <li><a class="menuitems">CONTACT ME</a></li>
-                </ul>
-            </nav>
+          
+    
         </div>
         
-        
-        
-        <!--<h2>MY WORK</h2>
-        <div class="slideshow-container">
-            <div class="myInfoSlides fade">
-                <div class="workTextDiv">
-                    <p class="workText">
-                        Most of my work is Java related at this stage as this was the programming language which attracted my focus at the first instance. This is mainly to do with android application as I am a big fan of android and I know the potential of smart phone applications and it's market. Not only for simple programming but this language also has the potential of being converted into gaming which may attract me interest in near future.    
-                    </p>
-                </div>                
-            </div>
-            <div class="myInfoSlides fade">
-                <div class="workTextDiv">
-                    <p class="workText">
-                        The aspect I love about C# is the similarity it has with Java programming. The similarities are syntaxes and features that are used within the tools make programming easier than expected. C# was the first language in which I made my first ever working and fully functional self service desktop application. Since then I have not touched C# until recently and when I reviewed the syntaxes and click methods, it reminded me a lot of Java and after few searches on Stack Overflow, I was able to achieve desired results instantly (ofcourse I was only testing dummy applications).
-                    </p>
-                </div>                
-            </div>
-            <div class="myInfoSlides fade">
-                <div class="workTextDiv">
-                    <p class="workText">
-                        Presence in the Web Browser is just as important as on smart phones/devices. Therefore, web development is something I am also looking to participate in because the first aspect of programming which I wanted to learn was "How to make websites". Today I know how to make websites but I do not know how to make effective, appealing, interesting and unique websites. This enspires me to be more involved with gaining more knowledge in web programming as well as learning jQuery and PHP.
-                    </p>
-                </div>                
-            </div>
-        </div>
-        
-        <div style="text-align: center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>-->
-        
-        
+                
         <!--/////////////////////////////////////////////////////////////-->
         <!--ANDROID SLIESHOW-->
         <!--/////////////////////////////////////////////////////////////-->
-        <!--
+
+<!--
         <div class="parralex" style="background-image: url(Images/background1.jpg)">
-            <div class="mainSlideshowContainer">
-                
-                <h3 class="subTitle">Android</h3>
-                
-                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
-                <br><br>
-                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
-                <div class="slideshow-containerLeft">
-                    <div class="mySlidesAndroid fade">
-                        <div class="numberText">PROJECT 1 IMAGE 1</div>
-                        <img src="Images/background1.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND ONE</div>
-                    </div>
-
-                    <div class="mySlidesAndroid fade">
-                        <div class="numberText">PROJECT 1 IMAGE 2</div>
-                        <img src="Images/background2.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND TWO</div>
-
-                    </div>
-
-                    <div class="mySlidesAndroid fade">
-                        <div class="numberText">PROJECT 1 IMAGE 3</div>
-                        <img src="Images/background3.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND THREE</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                </div>
-
-                <div class="infoContainerRight">
-                    <h3>PROJECT TITLE</h3>
-                    <p>
-                        information for project 1
-                    </p>
-                </div>
+            <div class="header-wrapper">
+                <h3 class="sectionTitle">ANDROID</h3>
+                <p class="sectionSubinformation">some stuff</p>
+            </div>
+            <div class="projects_wrapper">
+                <ul class="projects">
+                    <li class="project">
+                        <div class="project_title">Project 1</div>
+                        <div class="project_description">some stuff</div>
+                        <button>View project img (will think about it)</button>
+                    </li>
+                    <li class="project">
+                        <div class="project_title">Project 2</div>
+                        <div class="project_description">some stuff</div>
+                        <button>View project img (will think about it)</button>
+                    </li>
+                    <li class="project">
+                        <div class="project_title">Project 3</div>
+                        <div class="project_description">some stuff</div>
+                        <button>View project img (will think about it)</button>
+                    </li>
+                    <li class="project">
+                        <div class="project_title">Project 4</div>
+                        <div class="project_description">some stuff</div>
+                        <button>View project img (will think about it)</button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <br>
+-->
         
         
         <!--/////////////////////////////////////////////////////////////-->
         <!--C# SLIESHOW-->
         <!--/////////////////////////////////////////////////////////////-->
-                <!--
+                
+<!--
         <div class="parralex" style="background-image: url(Images/background2.jpg)">
-            <div class="mainSlideshowContainer">
-                
-                <h3 class="subTitle">c#</h3>
-                
-                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
-                <br><br>
-                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
-                <div class="infoContainerLeft">
-                    <h3>PROJECT TITLE</h3>
-                    <p>
-                        information for project 1
-                    </p>
-                </div>
-
-                <div class="slideshow-containerRight">
-                    <div class="mySlidesCSharp fade">
-                        <div class="numberText">PROJECT 1 IMAGE 1</div>
-                        <img src="Images/background1.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND ONE</div>
-                    </div>
-
-                    <div class="mySlidesCSharp fade">
-                        <div class="numberText">PROJECT 1 IMAGE 2</div>
-                        <img src="Images/background2.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND TWO</div>
-                    </div>
-
-                    <div class="mySlidesCSharp fade">
-                        <div class="numberText">PROJECT 1 IMAGE 3</div>
-                        <img src="Images/background3.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND THREE</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                </div>
-            </div>
+            
         </div>
-        <br>
+-->
         
         
         <!--/////////////////////////////////////////////////////////////-->
         <!--HTML & CSS SLIESHOW-->
         <!--/////////////////////////////////////////////////////////////-->
-                <!--
+                
+<!--
         <div class="parralex" style="background-image: url(Images/background1.jpg)">
-            <div class="mainSlideshowContainer">
-                
-                <h3 class="subTitle">HTML & CSS</h3>
-                
-                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
-                <br><br>
-                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
-                <div class="slideshow-containerLeft">
-                    <div class="mySlidesHTML fade">
-                        <div class="numberText">PROJECT 1 IMAGE 1</div>
-                        <img src="Images/background1.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND ONE</div>
-                    </div>
-
-                    <div class="mySlidesHTML fade">
-                        <div class="numberText">PROJECT 1 IMAGE 2</div>
-                        <img src="Images/background2.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND TWO</div>
-
-                    </div>
-
-                    <div class="mySlidesHTML fade">
-                        <div class="numberText">PROJECT 1 IMAGE 3</div>
-                        <img src="Images/background3.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND THREE</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-                </div>
-
-                <div class="infoContainerRight">
-                    <h3>PROJECT TITLE</h3>
-                    <p>
-                        information for project 1
-                    </p>
-                </div>
-            </div>
+            
         </div>
-        <br>
+-->
         
         
         <!--/////////////////////////////////////////////////////////////-->
         <!--PHOTOSHOP SLIESHOW-->
         <!--/////////////////////////////////////////////////////////////-->
-                <!--
+                
+<!--
         <div class="parralex" style="background-image: url(Images/background1.jpg)">
-            <div class="mainSlideshowContainer" id="slideshow-photoshop">
-                
-                <h3 class="subTitle">PHOTOSHOP</h3>
-                
-                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
-                <br><br>
-                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
-                
-                <div class="infoContainerLeft">
-                    <h3>PROJECT TITLE</h3>
-                    <p>
-                        information for project 1
-                    </p>
-                </div>
-
-                <div class="slideshow-containerRight">
-                    <div class="mySlidesPhotoshop fade">
-                        <div class="numberText">PROJECT 1 IMAGE 1</div>
-                        <img src="Images/background1.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND ONE</div>
-                    </div>
-
-                    <div class="mySlidesPhotoshop fade">
-                        <div class="numberText">PROJECT 1 IMAGE 2</div>
-                        <img src="Images/background2.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND TWO</div>
-                    </div>
-
-                    <div class="mySlidesPhotoshop fade">
-                        <div class="numberText">PROJECT 1 IMAGE 3</div>
-                        <img src="Images/background3.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND THREE</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-                </div>
-            </div>
+            
         </div>
-        <br>
+-->
         
         
         <!--/////////////////////////////////////////////////////////////-->
         <!--UNREAL ENGINE SLIESHOW-->
         <!--/////////////////////////////////////////////////////////////-->
-                <!--
+                
+<!--
         <div class="parralex" style="background-image: url(Images/background1.jpg)">
-            <div class="mainSlideshowContainer">
-                
-                <h3 class="subTitle">UNREAL ENGINE</h3>
-                
-                <p class="subInformation">The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.
-                <br><br>
-                The meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general. Many other related questions include: "Why are we here?", "What is life all about?", or "What is the purpose of existence?" There have been a large number of proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.</p>
-                
-                <div class="slideshow-containerLeft">
-                    <div class="mySlidesUE fade">
-                        <div class="numberText">PROJECT 1 IMAGE 1</div>
-                        <img src="Images/background1.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND ONE</div>
-                    </div>
-
-                    <div class="mySlidesUE fade">
-                        <div class="numberText">PROJECT 1 IMAGE 2</div>
-                        <img src="Images/background2.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND TWO</div>
-
-                    </div>
-
-                    <div class="mySlidesUE fade">
-                        <div class="numberText">PROJECT 1 IMAGE 3</div>
-                        <img src="Images/background3.jpg" style="width: 100%">
-                        <div class="text">THIS IS BACKGROUND THREE</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-                </div>
-
-                <div class="infoContainerRight">
-                    <h3>PROJECT TITLE</h3>
-                    <p>
-                        information for project 1
-                    </p>
-                </div>
-            </div>
-        </div>
-        <br>    
-        
-        <!--<script>
-            var slideIndex = 0;
-            showInfoSlides();
             
-            function showInfoSlides(){
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                for(i = 0; i < slides.length; i++){
-                    slides[i].style.display = "none";
-                }
-                
-                slideIndex++;
-                
-                if(slideIndex > slides.length){
-                    slideIndex = 1
-                }
-                
-                for(i = 0; i < dots.length; i++){
-                    dots[i].className = dots[i].className.replace("active", "");
-                }
-                
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-                setTimeout(showInfoSlides, 5000);
-                
-            }
-        </script>-->
+        </div>
+-->
+        <script src="JavaScript/data.js"></script>
         <script src="JavaScript/sections.js"></script>
+        <script src="JavaScript/modal.js"></script>
         <script src="JavaScript/slideshowMyWork.js"></script>
+<!--        <script src="JavaScript/navbar.js"></script>-->
+<!--        <script src="JavaScript/stickyNavbar.js"></script>-->
+        
         
     </body>  
 </html>
