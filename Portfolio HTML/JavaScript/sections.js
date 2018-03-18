@@ -23,7 +23,7 @@ function generateProjects(sectionId, sectionProjects, output) {
                       '<ul class="project_subtitle">';
         output = projectInfo(sectionProjects[i], output);
         output +=     '</ul>' +
-                      '<button onclick="showSlideshowModal('+sectionId+', '+i+')">View Project</button>'+
+                      '<button class="ViewProjectBtn" onclick="showSlideshowModal('+sectionId+', '+i+')"><span>View Project</span></button>'+
                   '</li>';
     }
     

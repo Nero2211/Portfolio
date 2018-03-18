@@ -72,8 +72,7 @@
     }
 }
 
-@media only screen and (max-width: 950px){
-    
+@media only screen and (max-width: 950px) and (orientation:portrait){
     .navigation.sticky {
         position: sticky !important;
     }
@@ -88,6 +87,47 @@
         text-decoration-style: dashed;
         font-size: calc(1em + 1vmin);
         width: 100%
+    }
+    
+    .buttonWrapper{
+        margin-bottom: 0px;
+    }
+    
+    #section1{
+        padding-top: 25%;
+    }
+    
+    /* SLIDESHOW */
+    .slide{
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 950px) and (orientation:landscape){
+    
+    .navigation.sticky {
+        position: sticky !important;
+    }
+    
+    .socialMediaHolder{
+        flex-direction: row;
+        padding: 20px 0;
+    }
+    
+    .socialMediaHolder > .socialMedia{
+        padding: 20px 0;
+        text-decoration-style: dashed;
+        font-size: calc(1em + 1vmin);
+        width: 100%
+    }
+    
+    .buttonWrapper{
+        margin-bottom: 0px;
+    }
+    
+    #section1{
+        padding-top: 25%;
     }
     
     /* SLIDESHOW */
@@ -112,6 +152,10 @@
     
     .center > .subDescription{
         font-size: calc(0.60em + 1vmin);
+    }
+    
+    #section1{
+        padding-top: 35%;
     }
     
     .subHeadingSubPage{
@@ -153,6 +197,46 @@
         width: 30% !important;
         height: 100% !important;
     }
+    //=====================================================================
+    //WORK CSS ADJUSTMENTS                         START
+    //=====================================================================
+    .header-wrapper{
+        height: 50% !important;
+    }
+    
+    .header-wrapper > .sectionTitle{
+        font-size: calc(5em + 1vmin);
+        padding-top: 3%;
+    }
+    
+    .header-wrapper > .sectionSubinformation{
+        font-size: calc(1em + 1vmin) !important;
+    }
+    
+    .parralex > .projects_wrapper{
+        height: 50%;
+    }
+    
+    .projects{
+        height: 0% !important;
+    }
+    
+    .projects > .project{
+        width: 75vw !important;
+        height: 50vw !important;
+        margin-right: 10vw !important;
+    }
+    
+    .project > .project_title{
+        font-size: 155% !important;
+    }
+    
+    .project > .project_subtitle{
+        font-size: 115% !important;
+    }
+    //=====================================================================
+    //WORK CSS ADJUSTMENTS                         END
+    //=====================================================================
     
 }
 
@@ -169,8 +253,12 @@
         font-size: calc(3em + 1vmin);
     }
     
+    .center{
+        width: 75%;
+    }
+    
     .center > .subDescription{
-        font-size: calc(0.60em + 1vmin);
+        font-size: calc(0.80em + 1vmin);
     }
     
     .buttonWrapper > .button{
@@ -238,9 +326,53 @@
         width: 30% !important;
         height: 100% !important;
     }
+    
+    //=====================================================================
+    //WORK CSS ADJUSTMENTS                         START
+    //=====================================================================
+    .parralex > .header-wrapper{
+        height: 50%;
+    }
+    
+    .header-wrapper > .sectionTitle{
+        font-size: calc(3em + 1vmin);
+        padding-top: 3%;
+    }
+    
+    .header-wrapper > .sectionSubinformation{
+        font-size: calc(0.75em + 1vmin) !important;
+    }
+    
+    .parralex > .projects_wrapper{
+        height: 50%;
+    }
+    
+    .projects{
+        height: 0% !important;
+    }
+    
+    .projects > .project{
+        width: 75vw !important;
+        height: 50vw !important;
+        margin-right: 10vw !important;
+    }
+    
+    .project > .project_title{
+        font-size: 125% !important;
+    }
+    
+    .project > .project_subtitle{
+        font-size: 90% !important;
+    }
+    //=====================================================================
+    //WORK CSS ADJUSTMENTS                         END
+    //=====================================================================
 }
 
 @media only screen and (max-width: 700px) and (orientation: landscape){
+    //=====================================================================
+    //INDEX CSS ADJUSTMENTS                         START
+    //=====================================================================
     .socialMediaHolder{
         flex-direction: row;
     }
@@ -250,6 +382,7 @@
     }
     .buttonWrapper > .button{
         font-size: calc(1em + 1vmin);
+        padding: 10px;
     }
     
     .workSlides > img{
@@ -290,4 +423,42 @@
         padding-top: 10%;
     }
     
+    .buttonWrapper{
+        margin-bottom: 0px;
+    }
+    //=====================================================================
+    //INDEX CSS ADJUSTMENTS                         END
+    //=====================================================================
+    //=====================================================================
+    //WORK CSS ADJUSTMENTS                         START
+    //=====================================================================
+    .header-wrapper {
+        height: 100%;
+        width: 50%;
+        float: left;
+    }
+    
+    .header-wrapper > .sectionTitle {
+        font-size: calc(1.5em + 1vmin);
+        padding-top: 3%;
+    }
+    
+    .header-wrapper > .sectionSubinformation {
+        font-size: calc(0.7em + 1vmin) !important;
+    }
+    
+    .parralex > .projects_wrapper {
+        height: 95%;
+        width: 50%;
+        float: right;
+        /* padding: 5%; */
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    .projects {
+        height: 100%;
+        display: inline-block;
+    }
+        
 }

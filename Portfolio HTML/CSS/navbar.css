@@ -13,7 +13,8 @@
     padding-top: 0px;
 }
 
-.navigation.sticky{
+.navigation.sticky{ 
+    //media query < 950px i believe - position: sticky
     position: fixed;
 }
 

@@ -20,11 +20,13 @@ h1, h2, h3, h4{
     margin: 0px;
 }
 
+/*
 ul, li {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+*/
 
 .sections-wrapper{
     height: 100%;
@@ -51,7 +53,7 @@ ul, li {
 #section1{
     width: 100%;
     height: calc(100% - 1em + 1vmin);
-    padding-top: 25%;
+    padding-top: 15%;
     text-align: center;
 }
 

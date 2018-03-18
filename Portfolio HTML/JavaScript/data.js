@@ -1,30 +1,30 @@
 var sections = [
     {
-        subTitle: "android",
-        subInformation: "about android stuff",
+        subTitle: "Android",
+        subInformation: "Random page patrol is a Wikipedia communal patrol which refers to the process of regularly and frequently checking randomly selected pages through Special:Random. The primary goal of random page patrollers is to ensure random articles conform to Wikipedia's policies on content and style as well as the related guidelines. Secondarily, that style and formatting is consistent and meets the basic principles laid out in Wikipedia's Manual of Style. The guidelines for the New pages patrol and Recent changes patrol also apply, merely the search method is different.",
         sectionBackground: "Images/background1.jpg",
         slideshowClassname: "Android",
         projects: [
             {
-                title: "project 1",
-                info: ["Reddit Project", "Something cool"],
+                title: "Zoopla Estate Agent",
+                info: ["Using RESTFUL API Supported by Zoopla", "Designed for the college project"],
                 images: [
                     {
-                        title: "Homepage of Reddit",
+                        title: "Splashscreen",
                         src: "Images/background1.jpg"
                     },
                     {
-                        title: "Login Page",
+                        title: "Main search page",
                         src: "Images/background2.jpg"
                     }
                 ]
             },
             {
-                title: "project 2",
-                info: ["Facebook Project", "Something cool"],
+                title: "UFC Fighter Application",
+                info: ["Designed using Retrofit Library", "Designed as part of a test for an organisation"],
                 images: [
                     {
-                        title: "project 2 image",
+                        title: "List of all the fighters",
 //                        resolution {
 //                            mobile: "Images/background1.jpg",
 //                            tablet: "Images/background1.jpg",
@@ -32,7 +32,7 @@ var sections = [
                         src: "Images/background1.jpg"
                     },
                     {
-                        title: "project 2 image",
+                        title: "Information on specific fighter",
                         src: "Images/background2.jpg"
                     }
                 ]
@@ -40,8 +40,8 @@ var sections = [
         ]
     },
     {
-        subTitle: "c#",
-        subInformation: "cool stuff about C#",
+        subTitle: "C#",
+        subInformation: "Random page patrol is a Wikipedia communal patrol which refers to the process of regularly and frequently checking randomly selected pages through Special:Random. The primary goal of random page patrollers is to ensure random articles conform to Wikipedia's policies on content and style as well as the related guidelines. Secondarily, that style and formatting is consistent and meets the basic principles laid out in Wikipedia's Manual of Style. The guidelines for the New pages patrol and Recent changes patrol also apply, merely the search method is different.",
         sectionBackground: "Images/background2.jpg",
         slideshowClassname: "CSharp",
         projects: [
@@ -81,8 +81,8 @@ var sections = [
     },
     {
         
-        subTitle: "unreal engine",
-        subInformation: "something cool about UE",
+        subTitle: "Unreal Engine",
+        subInformation: "Random page patrol is a Wikipedia communal patrol which refers to the process of regularly and frequently checking randomly selected pages through Special:Random. The primary goal of random page patrollers is to ensure random articles conform to Wikipedia's policies on content and style as well as the related guidelines. Secondarily, that style and formatting is consistent and meets the basic principles laid out in Wikipedia's Manual of Style. The guidelines for the New pages patrol and Recent changes patrol also apply, merely the search method is different.",
         sectionBackground: "Images/background3.jpg",
         slideshowClassname: "UE",
         projects: [
