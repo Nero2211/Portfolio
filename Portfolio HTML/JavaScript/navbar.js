@@ -16,16 +16,27 @@ close.addEventListener("click", function(){
   }   
 });
 
+function calculateActiveNavHeight(){
+    var height = 0;
+    var linkElements = Array.prototype.slice.call( document.getElementsByClassName('menuitems') )
+    if(linkElements){
+        height = linkElements[0].offsetParent.scrollHeight
+        return height + "px";
+    } else return "300px";
+}
+
+
 function navToggle() {	
 	//to close
 	if (nav.style.height <= navbarActiveHeight) {
         nav.style.height = navbarHeight;
         menu.classList.remove("active")
+       
         document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
 	} 
 	//to open
 	else if (nav.style.height <= navbarHeight) {
-	   nav.style.height = navbarActiveHeight;
+	    nav.style.height = calculateActiveNavHeight();
     	menu.classList.add("active");
     	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 	}

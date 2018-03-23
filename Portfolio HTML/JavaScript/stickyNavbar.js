@@ -6,7 +6,9 @@ window.onscroll = function() {myFunction()};
             function myFunction() {
               if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
+                navbar.style.position = "fixed";
               } else {
                 navbar.classList.remove("sticky");
+                navbar.style.position = "sticky";
               }
             }

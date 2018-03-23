@@ -18,7 +18,7 @@ function generateProjects(sectionId, sectionProjects, output) {
     var amountOfProjects = sectionProjects.length;
    
     for(var i=0; i < amountOfProjects; i++){
-        output += '<li id="'+sectionProjects[i].id+'" class="project">' +
+        output += '<li id="'+sectionProjects[i].id+'" class="project" style="background-image: url('+sectionProjects[i].sectionGridBackground+');background-size: 100%;">' +
                       '<div class="project_title">'+sectionProjects[i].title+'</div>' +
                       '<ul class="project_subtitle">';
         output = projectInfo(sectionProjects[i], output);

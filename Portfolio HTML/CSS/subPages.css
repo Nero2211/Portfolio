@@ -74,11 +74,11 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #191970; 
+    background: rgba(55, 114, 174, 0.85); 
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: black; 
+    background: rgba(14, 104, 194, 0.55);
 }

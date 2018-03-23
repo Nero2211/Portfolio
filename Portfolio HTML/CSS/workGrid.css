@@ -5,16 +5,19 @@
 .projects_wrapper {
     width: 100%;
     overflow: auto;
+    height: calc(50% - 10px);
+    margin-bottom: 10px;
 } 
 
 .projects {
     height: 100%;
+    margin: 0 auto;
     display: inline-flex;
 }
 
 .projects > .project {
     width: 50vw;
-    height: 30vw;
+    height: calc(100% - 1vw);
     border: 1px solid white;
     margin-bottom: 1vw;
     margin-right: 1vw;
@@ -36,7 +39,7 @@
     justify-content: flex-start;
     font-size: 105%;
     color: red;
-    
+    text-align: left;
 }
 
 
@@ -50,7 +53,7 @@
     bottom: 0px;
     right: 0px;
     position: absolute;
-    background: #191970;
+    background: rgba(55, 114, 174, 0.85);
 }
 
 .ViewProjectBtn{
