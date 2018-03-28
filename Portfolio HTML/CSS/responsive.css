@@ -31,17 +31,25 @@
         font-size: calc(6em + 1vmin);
     }
     
+    .center {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    
     .center > .subDescription{
         font-size: calc(0.75em + 1vmin);
     }
     
-    .subHeadingSubPage{
+    #aboutMeHeading{
         font-size: calc(4em + 1vmin);
         padding: 5px;
+/*        height: 0%;*/
     }
     
     .leftContainer{
         width: 50% !important;
+        height: 100%;
     }
     
     .rightContainer{
@@ -49,14 +57,22 @@
     }
     
     .leftContainer > img{
+/*
         width: 50% !important;
         height: 100% !important;
+*/
+    }
+    
+    .leftContainer > #birminghamCityLogo{
+        width: auto !important;
     }
     
     .rightContainer > .subInformation{
-        font-size: calc(0.60em + 1vmin);
-        font-style: italic;
         padding: 0px;
+    }
+    
+    .subResponsiveFont{
+        font-size: calc(0.90em + 1vmin);
     }
     
     .container{
@@ -65,7 +81,7 @@
     }
     
     .hobbiesSlides > .subInformation{
-        font-size: calc(0.60em + 1vmin);
+        font-size: calc(0.80em + 1vmin);
         font-style: italic;
     }
     
@@ -99,6 +115,12 @@
         width: 100%
     }
     
+    .center {
+        margin: auto;
+        width: 75%;
+        text-align: center;
+    }
+    
     .buttonWrapper{
         margin-bottom: 0px;
     }
@@ -121,7 +143,7 @@
     TABLET LANDSCAPE                                       START
     =====================================================================*/
 @media only screen and (max-width: 950px) and (orientation:landscape){
-    
+    /*  */
     .navigation.sticky {
         position: sticky;
     }
@@ -173,8 +195,16 @@
         font-size: calc(4em + 1vmin);
     }
     
+    .center{ 
+        overflow-x: auto;
+    }
+    
     .center > .subDescription{
         font-size: calc(0.60em + 1vmin);
+    }
+    
+    .rightContainer > .subDescription{
+        font-size: calc(0.70em + 1vmin);
     }
     
     #section1{
@@ -185,6 +215,10 @@
         font-size: calc(3em + 1vmin);
         padding-top: 10px !important;
         padding-bottom: 10px !important;
+    } 
+    
+    .h3subHeadingSubPage{
+        font-size: calc(1.75em + 1vmin);
     }
     
     .leftContainer > img{
@@ -192,18 +226,30 @@
         height: 100% !important;
     }
     
-    .rightContainer > .subInformation{
-        font-size: calc(0.60em + 1vmin);
-        font-style: italic;
+    .rightContainer, .topContainer > .subInformation{
         padding: 5px !important;
+    }
+    
+    .subResponsiveFont{
+        font-size: calc(0.70em + 1vmin);
+        font-style: italic;
     }
     
     .leftContainer{
         width: 100% !important;
+        height: 100%;
+    }
+    
+    .educationLeftContainer{
+        height: auto;
     }
     
     .rightContainer{
         width: 100% !important;
+    }
+    
+    .skillsContainer, .knowledgeContainer{
+        width: 50% !important;
     }
     
     .container{
@@ -212,7 +258,7 @@
     }
     
     .hobbiesSlides > .subInformation{
-        font-size: calc(0.60em + 1vmin);
+        font-size: calc(0.70em + 1vmin);
         font-style: italic;
     }
     
@@ -263,6 +309,57 @@
     
 }
 
+@media only screen and (max-width: 950px) and (min-width: 601px) and (orientation: landscape){
+    .container{
+        height: 100%;
+        display: flex !important;
+        padding-top: 5px !important;
+    }
+    
+    .subInformation {
+        padding-top: 0px; 
+        padding-left: 0px; 
+        padding-right: 0px; 
+    }
+    
+    .subResponsiveFont {
+        font-weight: bold;
+    }
+    
+    .parralex{
+        overflow: auto;
+    }
+    
+    .subHeadingSubPage {
+        font-size: calc(2em + 1vmin);
+    }
+    
+    .h3subHeadingSubPage{
+        font-size: calc(1.25em + 1vmin);
+    }
+    
+    .leftContainerImage{
+        width: 30% !important;
+    }
+    
+    .leftContainer > img {
+        width: auto !important;
+        height: 50% !important;
+    }
+    
+    .leftContainer > #birminghamCityLogo{
+        height: 100% !important;
+    }
+    
+    .rightContainerInformation{
+        width: 70% !important;
+    }
+    
+    .educationList, .knowledgeList, .skillsList{
+        list-style-position: outside;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #section1 > .title{
         font-size: calc(3em + 1vmin);
@@ -277,11 +374,16 @@
     }
     
     .center{
-        width: 75%;
+        width: 95%;
+        overflow-x: auto;
     }
     
     .center > .subDescription{
-        font-size: calc(0.80em + 1vmin);
+        font-size: calc(0.60em + 1vmin);
+    }
+    
+    .rightContainer > .subDescription{
+        font-size: calc(0.70em + 1vmin);
     }
     
     .buttonWrapper > .button{
@@ -310,10 +412,16 @@
         font-style: italic;
     }
     
+    /*ABOUT ME CSS*/
+    
     .subHeadingSubPage{
         font-size: calc(2em + 1vmin);
         padding-top: 5% !important;
         padding-bottom: 5% !important;
+    }
+    
+    .h3subHeadingSubPage{
+        font-size: calc(1.25em + 1vmin);
     }
     
     .leftContainer > img{
@@ -325,6 +433,21 @@
         font-size: calc(0.60em + 1vmin);
         font-style: italic;
         padding: 0px !important;
+    }
+    
+    .topContainerWhole{
+        height: 40%;
+    }
+    
+    .bottomContainerWhole{
+        height: 60%;
+    }
+    
+    .topContainerWhole > .subInformation{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
     
     .leftContainer{
@@ -341,13 +464,35 @@
     }
     
     .hobbiesSlides > .subInformation{
-        font-size: calc(0.60em + 1vmin);
-        font-style: italic;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
     
     .hobbiesSlides > img{
         width: 30% !important;
         height: 100% !important;
+    }
+    
+    #aboutMeHeading{
+        height: 15%;
+    }
+    
+    .skillsKnowledgeTopContainer{
+        height: 40%;
+    }
+    
+    .skillsKnowledgeBottomContainer{
+        height: 60%;
+    }
+    
+    .subResponsiveFont{
+        font-size: calc(0.60em + 1vmin);
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .skillsList, .knowledgeList, .educationList {
+        list-style-position: outside;
     }
     
     /*=====================================================================
@@ -363,7 +508,7 @@
     }
     
     .header-wrapper > .sectionSubinformation{
-        font-size: calc(0.75em + 1vmin) !important;
+        font-size: calc(0.70em + 1vmin) !important;
     }
     
     .parralex > .projects_wrapper{

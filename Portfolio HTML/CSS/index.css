@@ -13,11 +13,42 @@ body, html{
     src: url(Font/Coalition_v2..ttf) format("truetype");
 }
 
-h1, h2, h3, h4{
+h1{
     color: white;
     font-weight: 600;
     font-size: 60px;
     margin: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+h2{
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 0px;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+h3{
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 0px;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.h3subHeadingSubPage{
+    font-size: 45px;
+}
+
+
+
+h4{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0px;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
 }
 
 /*

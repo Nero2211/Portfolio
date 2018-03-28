@@ -1,6 +1,6 @@
 .container{
     display: block;
-    padding-top: 100px;
+    height: 85%;
 }
 
 .leftContainer{
@@ -13,4 +13,29 @@
     float: right;
     width: 50%;
     justify-content: center;
+}
+
+.containerWhole{
+    height: 100%;
+    overflow: auto;
+}
+
+.topContainerWhole, .bottomContainerWhole{
+    height: 50%;
+}
+
+.heightThirtyFive{
+    height: 35%;
+}
+
+.heightSixtyFive{
+    height: 65%;
+}
+
+.heightTwenty{
+    height: 20%;
+}
+
+.heightEighty{
+    height: 80%;
 }

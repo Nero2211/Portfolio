@@ -13,6 +13,7 @@
     height: 100%;
     margin: 0 auto;
     display: inline-flex;
+    padding-left: 1vw;
 }
 
 .projects > .project {
@@ -69,4 +70,5 @@
 .modal > .modal-project-info{
     font-size: 110%;
     color: white;
+    overflow: auto;
 }

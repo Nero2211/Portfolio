@@ -7,11 +7,13 @@
         <link rel="stylesheet" href="CSS/index.css">
         <link rel="stylesheet" href="CSS/navbar.css">
         <link rel="stylesheet" href="CSS/imageslideshow.css">
+        <link rel="stylesheet" href="CSS/divContainer.css">
+        <link rel="stylesheet" href="CSS/subPages.css">
         <link rel="stylesheet" href="CSS/responsive.css">
     </head>
     <body>
         
-        <div class="parralex" style="background-image: url(Images/Edited/DarkBackground/index1.png);, text-align: center">
+        <div class="parralex" style="background-image: url(Images/BackgroundImages/index/background1.png);, text-align: center">
             <div class="socialMediaHolder">
                 <div class="socialMedia"><a class="socialMediaItem" href="https://github.com/Nero2211">GITHUB</a></div>
                 <div class="socialMedia"><a class="socialMediaItem" href="https://www.linkedin.com/in/kartik-verma-582138146/">LINKEDIN</a></div>
@@ -24,7 +26,7 @@
             
         </div>
         
-        <div class="parralex about-me" id="test"style="background-image: url(Images/Edited/LightBackground/index2.png);, text-align: center">
+        <div class="parralex about-me" id="test"style="background-image: url(Images/BackgroundImages/index/background2.png);, text-align: center">
             <nav id="navbar" class="navigation">
                 <span id="closebtn" onclick="navToggle()">
                   <span class="line1"></span>
@@ -39,13 +41,17 @@
                 </ul>
             </nav>
             
-            <div class="subHeading"><a class="subTitle2" id="titleAboutMeIndex">ABOUT ME</a></div>
+            <div class="subHeading whiteFont"><a class="subTitle2" id="titleAboutMeIndex">ABOUT ME</a></div>
             
             <div class="center">
-                <p class="subDescription" id="subDescriptionAboutMeIndex">
-                    Graduated from Walsall College w/ Birmingham City University and starting to develop my career in the programming world.... <br><br>
-                    The first solution I built was a self service check out system using a barcode scanner (college project) in C# and the outcome of the project gave me a goal to chase.... <br><br>
-                    My main fuel which wakes me up every morning is the potential of being able to develop a system/application/website/software for a client or colleague and knowing the solution will be used by others.... <br><br>
+                <p class="subDescription subResponsiveFont whiteFont" id="subDescriptionAboutMeIndex">
+                    First of all, Welcome to my site
+                    <br><br>
+                    My name is Kartik and I am aspiring to become a Software/Application Development. But the question is WHY and HOW did it start?
+                    <br><br>
+                    Since high school, I had a key interest in playing, hacking and creating/downloading additional gaming contents. Sooner or later, I became interested in how these aspects are achieved. Game designing was understandable but I didn’t understand how additional applications are created which would manipulate the contents of a game. This is when the stage when it triggered a drive within me to learn this aspect but I was unsure if I was able to create a career out of this. 
+                    <br><br>
+                    After thinking about this career, I decided to study Computer Science for one year in College to gain insight of the course and aspects I will be dealing with on day to day basis. This is the moment I realised, this is the career I not only want to participate in but also make development my primary career path. As I do not have any development experience prior to my course nor do I come from a development background, I was quite satisfied with how things turned out to be. I’ve also found my own potential at this stage and how I can push myself even further to achieve maximum results.
                 </p>
             </div>
             
@@ -55,52 +61,82 @@
                             
         </div>
                         
-        <div class="parralex parralex-slideshow" style="background-image: url(Images/Edited/DarkBackground/index3.png);">
-            <div class="subHeading"><a class="subTitle2" id="titleWorkIndex">WORK</a></div>
+        <div class="parralex parralex-slideshow" style="background-image: url(Images/BackgroundImages/index/background3.png);">
             
-            <div class="slideshow-container">
-                <div class="workSlides slide">
-                    <img src="Images/Logo/logo-AndroidStudio.png" width="300px" height="300px">
-                    <p class="subDescription" id="subDescriptionWorkIndex">During my second year in College, I was introduced to Android Studio development tool which is widely popular amongst Android Applications. At first, the tool was rather intimidating because I there are number of things about this tool I did not understand at that stage and some at this point of time. However, the moment I developed my first application, the tool become user friendly and I started to remember majority of it's components. It is difficult to come up with a new idea for an application as majority of the contents are already covered. However, this does not stop me from making application. Constantly, I will look at current applications and make judgements based on their apperance, functionality and features... </p>
+            <div class="containerWhole">
+                <div class="heightTwenty">
+                    <div class="subHeading blackFont"><a class="subTitle2" id="titleWorkIndex">WORK</a></div>
                 </div>
-                
-                <div class="workSlides slide">
-                    <img src="Images/java.png" width="300px" height="300px">
-                    <p class="subDescription" id="subDescriptionWorkIndex">As mentioned before, C# was the first language in which I built my first ever working solution. I was fully responsible for coming up with the requirements, design and working code for this application. From that day, I knew I was going to be using C# somewhere along in the future...</p>
+                <div class="heightEighty">
+                    <div class="slideshow-container">
+                        <div class="workSlides slide">
+                            <div class="leftContainer">
+                                <img src="Images/Logo/logo-AndroidStudio.png" width="300px" height="300px">
+                            </div>
+                            <div class="rightContainer">
+                                <p class="subDescription subResponsiveFont blackFont" id="subDescriptionWorkIndex">Android is one of my favourite platforms of development because the opportunities for development on Android are endless and limitless. All of this started off which a simple project designed in Eclipse which I was not satisfied with as it was back-end development project with no interface attached. However, the moment I participated in the Mobile Development Unit, it was the turning point. The reason being because I was able to create application on my favourite platform and at that stage, I was filled with numerous application ideas which I would be developing in near future.</p>
+                            </div>
+                        </div>
+                        <div class="workSlides slide">
+                            <div class="leftContainer">
+                                <img src="Images/java.png" width="300px" height="300px">
+                            </div>
+                            <div class="rightContainer">
+                                <p class="subDescription subResponsiveFont blackFont" id="subDescriptionWorkIndex">C# was the first programming language which was introduced on the course. It all started with simple calculations and looking at different types of variables. However, the moment I started to work with different types of control using Visual Studio, I realised the potential of Visual Studio using C# to create desktop based software. Furthermore, I’ve noticed that C# programming language is also capable of creating simulating user behaviour on computer. Meaning that I can use C# to create automated tools which can be used to eliminate daily tasks. However, this is only a theory as I am yet to practice this simulation process which I will be attending in near future.</p>
+                            </div>
+                        </div>
+
+                        <div class="workSlides slide">
+                            <img src="Images/csharp.png" width="300px" height="300px">
+                            <p class="subDescription" id="subDescriptionWorkIndex">PENDING INFO</p>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>  
                 </div>
-                
-                <div class="workSlides slide">
-                    <img src="Images/csharp.png" width="300px" height="300px">
-                    <p class="subDescription" id="subDescriptionWorkIndex">Building an e-commerce website for college project in HTML, CSS and PHP was really interesting and challenging because CSS in itself is difficult to maintain as numerous aspects have to be taken into consideration i.e. screen size, positing of elements, etc. Having said that, I am now training myself to building more websites with better User Interfaces not just in Photoshop but also in HTML and CSS...</p>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div>            
+            </div>
         </div>
         
-        <div class="parralex parralex-slideshow" style="background-image: url(Images/Edited/LightBackground/index4.png);">
-            <div class="subHeading"><a class="subTitle2" id="titlePlanIndex">PLAN</a></div>
-            
-            <div class="slideshow-container">
-                <div class="planSlides slide">
-                    <img src="Images/android.png" width="300px" height="300px">
-                    <p class="subDescription" id="subDescriptionPlanIndex">Android is my favourite operating system on mobile devices because it's flexible and provides you with full control over the phone i.e. downloading music, videos, .APK files directly from the internet. This is the reason why I wanted to persue my career in Java desinging native applications for many devices... </p>
+        <div class="parralex parralex-slideshow" style="background-image: url(Images/BackgroundImages/index/background4.png);">
+            <div class="containerWhole">
+                <div class="heightTwenty">
+                    <div class="subHeading whiteFont"><a class="subTitle2" id="titlePlanIndex">PLAN</a></div>
                 </div>
-                 
-                <div class="planSlides slide">
-                    <img src="Images/java.png" width="300px" height="300px">
-                    <p class="subDescription" id="subDescriptionPlanIndex">As mentioned before, C# was the first language in which I built my first ever working solution. I was fully responsible for coming up with the requirements, design and working code for this application. From that day, I knew I was going to be using C# somewhere along in the future...</p>
+                <div class="heightEighty">
+                    <div class="slideshow-container">
+                        <div class="planSlides slide">
+                            <div class="leftContainer">
+                                <img src="Images/android.png" width="300px" height="300px">
+                            </div>
+                            <div class="rightContainer">
+                                <p class="subDescription subResponsiveFont whiteFont" id="subDescriptionPlanIndex">My plan is plain and simple which is to never stop learning. I am always open to idea of development and ideas where I am able to challenge and push my own potential to achieve greater results. My primary plan is to participate in creating a development tool rather than application/software using development tool. Till today, I am curious how development tools are designed, the number of people participating in the development process, the amount of work put into it and potentially the life expectancy of these development tools.</p>
+                            </div>
+                        </div>
+
+                        <div class="planSlides slide">
+                            <div class="leftContainer">
+                                <img src="Images/java.png" width="300px" height="300px">
+                            </div>
+                            <div class="rightContainer">
+                                <p class="subDescription subResponsiveFont whiteFont" id="subDescriptionPlanIndex">Behind my primary plan sits my secondary plan which is to become an expert in the programming language in which I’ve done some/majority of my work (C#, Java & HTML/CSS). At this stage, I’ve not created many projects because of limited free time but I am to force myself in 2018 to change this and create complex projects which I will be using to showcase my work and my skills. This might involve simple interface creation using Adobe Photoshop/After Effects. Depending on resources available for the project, I will even push myself further in order to finish the project and launch it on PlayStore or share it with my friends if it’s a Desktop Application. At the end, it all comes down to how diverse and creative my projects are.</p>
+                            </div>
+                        </div>
+
+                        <div class="planSlides slide">
+                            <div class="leftContainer">
+                                <img src="Images/csharp.png" width="300px" height="300px">
+                            </div>
+                            <div class="rightContainer">
+                                <p class="subDescription" id="subDescriptionPlanIndex">Lastly, I will not just sit on my current programming language. I’ll have to take further steps in learning most demanded languages or languages with the most potential. This is because I do not want to become a limited developer but a limitless developer. I want to be able to develop majority of my ideas/strategy and if not be able to develop, at least be able to consult the appropriate strategy to develop the solution.</p>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
                 </div>
-                
-                <div class="planSlides slide">
-                    <img src="Images/csharp.png" width="300px" height="300px">
-                    <p class="subDescription" id="subDescriptionPlanIndex">Building an e-commerce website for college project in HTML, CSS and PHP was really interesting and challenging because CSS in itself is difficult to maintain as numerous aspects have to be taken into consideration i.e. screen size, positing of elements, etc. Having said that, I am now training myself to building more websites with better User Interfaces not just in Photoshop but also in HTML and CSS...</p>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>            
+            </div>
         </div>
         
         <script src="JavaScript/stickyNavbar.js"></script>

@@ -113,7 +113,14 @@
     font-size: 12px;
     padding: 18px 28px;
     position: absolute;
+    /* top: 0; */
+    /* right: 0; */
     top: 0;
+    text-align: center;
+    /* justify-content: center; */
+    width: 100%;
+    font-weight: bold;
+    overflow: auto;
 }
 
 .numberOfText {
@@ -121,8 +128,12 @@
     font-size: 12px;
     padding: 18px 28px;
     position: absolute;
-    top: 0;
-    right: 0;
+    /* top: 0; */
+    /* right: 0; */
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
 }
 
 .dot{
