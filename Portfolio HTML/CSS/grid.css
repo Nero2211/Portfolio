@@ -1,0 +1,13 @@
+.planGridWrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 10vw;
+}
+
+.planGrid{
+    border: 1px solid #ccc;
+    background: rgba(55, 114, 174, 0.85);
+}

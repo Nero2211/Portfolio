@@ -48,7 +48,6 @@ h4{
     font-weight: 300;
     font-size: 30px;
     margin: 0px;
-    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
 }
 
 /*
@@ -88,6 +87,15 @@ ul, li {
     text-align: center;
 }
 
+.centeredSubHeadingInDIV{
+    position: relative;
+    top: 40%;
+}
+
+.centeredSubHeadngFont{
+    font-size: calc(10em + 1vmin);
+}
+
 /*.parralex{
     height: 100%;
     background-attachment: fixed;
@@ -98,6 +106,7 @@ ul, li {
 
 .parralex{
     height: 100%;
+    overflow: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,6 +114,10 @@ ul, li {
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
+}
+
+.indexParralaxOverflowNone{
+    overflow: unset;
 }
 
 .title{
@@ -121,8 +134,8 @@ ul, li {
 
 .socialMediaHolder{
     display: flex;
-    justify-content: center; //horizontal
-    align-content: center; //vertical
+    justify-content: center;
+    align-content: center; 
     width: 100%;
 }
 
@@ -164,7 +177,6 @@ ul, li {
 }
 
 .about-me {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }

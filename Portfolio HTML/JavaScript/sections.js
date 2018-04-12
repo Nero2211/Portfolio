@@ -34,18 +34,35 @@ function generateSection(sectionId, output){
     var currentSection = sections[sectionId];
     var sectionProjects = sections[sectionId].projects;
     
-    output +=
+//    output +=
+//        '<div class="parralex" style="background-image: url('+currentSection.sectionBackground+')">'+
+//            '<div class="header-wrapper">'+
+//                '<h3 class="sectionTitle">'+currentSection.subTitle+'</h3>'+
+//                '<p class="sectionSubinformation">'+currentSection.subInformation+'</p>' +
+//            '</div>' +
+//            '<div class="projects_wrapper">'+
+//                '<ul class="projects">';
+//    output = generateProjects(sectionId, sectionProjects, output);
+//    output +=   '</ul>' +
+//            '</div>' +
+//        '</div>';
+    
+        output +=
         '<div class="parralex" style="background-image: url('+currentSection.sectionBackground+')">'+
-            '<div class="header-wrapper">'+
-                '<h3 class="sectionTitle">'+currentSection.subTitle+'</h3>'+
-                '<p class="sectionSubinformation">'+currentSection.subInformation+'</p>' +
-            '</div>' +
-            '<div class="projects_wrapper">'+
-                '<ul class="projects">';
-    output = generateProjects(sectionId, sectionProjects, output);
-    output +=   '</ul>' +
-            '</div>' +
-        '</div>';
+            '<div>'+
+                '<div class="planSubHeadingDiv_whereIgo">'+
+                    '<h2 class="subHeadingSubPage whiteFont" id="aboutMeHeading">'+currentSection.subTitle+'</h2>'+
+                '</div>'+
+                '<div class="planInfoDiv">'+
+                    '<p class="subInformation whiteFont italicStyle">'+currentSection.subInformation+'</p>'+
+                '</div>'+
+                '<div class="projects_wrapper">'+
+                    '<ul class="projects">';
+        output = generateProjects(sectionId, sectionProjects, output);
+        output +=   '</ul>' +
+                '</div>' +
+            '</div>'+
+        '</div>';   
     
     return output;
 }

@@ -47,6 +47,10 @@
 /*        height: 0%;*/
     }
     
+    .subInformation{
+        font-size: calc(0.4em + 1vmin);
+    }
+    
     .leftContainer{
         width: 50% !important;
         height: 100%;
@@ -183,6 +187,7 @@
     MOBILE PORTRAIT                                       START
     =====================================================================*/
 @media only screen and (min-width: 601px) and (max-width: 950px){
+    
     #section1 > .title{
         font-size: calc(5.5em + 1vmin);
     }
@@ -193,6 +198,14 @@
     
     .subHeading > .subTitle2{
         font-size: calc(4em + 1vmin);
+    }
+    
+    .planInfoDiv {
+        padding-right: 10%;
+    }
+    
+    .centeredSubHeadngFont {
+        font-size: calc(5.5em + 1vmin);
     }
     
     .center{ 
@@ -334,6 +347,21 @@
         font-size: calc(2em + 1vmin);
     }
     
+    
+    .centeredSubHeadngFont {
+        font-size: calc(6em + 1vmin);
+    }
+    
+    .centeredSubHeadngFont2 {
+        font-size: calc(3em + 1vmin);
+    }   
+    
+    .planInfoDiv{
+        width: 80%;
+        padding-right: 10%;
+        font-size: calc(0.65em + 1vmin);
+    }
+    
     .h3subHeadingSubPage{
         font-size: calc(1.25em + 1vmin);
     }
@@ -367,6 +395,15 @@
     
     #section1 > .subtitle {
         font-size: calc(0.75em + 1vmin);
+    }
+    
+    .centeredSubHeadingInDIV > .centeredSubHeadngFont{
+        font-size: calc(3.5em + 1vmin);
+    }
+    
+    .centeredSubHeadingInDIV > .centeredSubHeadingFont2{
+        font-size: calc(0.75em + 1vmin);
+        letter-spacing: 5px;
     }
     
     .subHeading > .subTitle2{
@@ -429,11 +466,13 @@
         height: 100% !important;
     }
     
+/*
     .rightContainer > .subInformation{
         font-size: calc(0.60em + 1vmin);
         font-style: italic;
         padding: 0px !important;
     }
+*/
     
     .topContainerWhole{
         height: 40%;
@@ -475,6 +514,35 @@
     
     #aboutMeHeading{
         height: 15%;
+    }
+    
+    .planSubHeadingDiv_whereIgo, .planSubHeadingDiv_Development,
+    .planSubHeadingDiv_Creativity, .planSubHeadingDiv_Tools{
+        padding-left: 5%;
+    }
+    
+/*
+    .planInfoDiv{
+        width: 90%;
+        padding: 5%;
+    }
+*/
+    .planInfoDiv{
+        padding: 0%;
+        
+    }
+    
+    .button{
+        padding: 2%;
+        width: 70%;
+    }
+    
+    .aboutMeContainer{
+        height: 100%;
+        overflow: auto;
+    }
+    .subInformation{
+        font-size: calc(0.60em + 1vmin);
     }
     
     .skillsKnowledgeTopContainer{
@@ -589,6 +657,7 @@
     
     #section1{
         padding-top: 10%;
+        height: auto;
     }
     
     .buttonWrapper{
@@ -630,4 +699,7 @@
         display: inline-block;
     }
         
+}
+
+@media only screen and (min-width: 601px) and (max-width: 950px){
 }
